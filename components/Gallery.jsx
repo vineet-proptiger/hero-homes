@@ -117,19 +117,23 @@ const Gallery = ({ setIsOpen }) => {
                 fontSize: '12px',
                 fontWeight: '700',
                 letterSpacing: '0.15em',
-                color: '#4b5563',
+                color: '#111827',
                 border: '1px solid #e5e7eb',
                 padding: '14px 36px',
                 background: 'transparent',
-                cursor: 'pointer',
+                borderRadius: '8px',
+                transition: 'all 0.3s ease',
+                textTransform: 'uppercase'
               }}
               onMouseEnter={e => {
-                e.currentTarget.style.background = '#4b5563'
+                e.currentTarget.style.background = '#e31837'
                 e.currentTarget.style.color = '#fff'
+                e.currentTarget.style.borderColor = '#e31837'
               }}
               onMouseLeave={e => {
                 e.currentTarget.style.background = 'transparent'
-                e.currentTarget.style.color = '#4b5563'
+                e.currentTarget.style.color = '#111827'
+                e.currentTarget.style.borderColor = '#e5e7eb'
               }}
             >
               {showAll ? 'SHOW LESS' : 'VIEW ALL GALLERY'}

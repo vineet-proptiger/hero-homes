@@ -197,11 +197,8 @@ const AboutDeveloper = ({ setIsOpen }) => (
           {/* White Body */}
           <div style={{ padding: '32px', flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
             <div>
-              <p style={{ color: '#111827', fontFamily: F_SANS, lineHeight: 1.85, fontSize: '15px', margin: '0 0 20px', textAlign: 'justify', opacity: 0.9 }}>
-                A part of the prestigious Hero Enterprise, Hero Realty is a real estate firm that builds quality residences. The company has coupled its innovative technology with sustainable practices to deliver residential projects in India.
-              </p>
               <p style={{ color: '#111827', fontFamily: F_SANS, lineHeight: 1.85, fontSize: '15px', margin: '0 0 24px', textAlign: 'justify', opacity: 0.9 }}>
-                With Hero Homes Sector MU Greater Noida, we are bringing our legacy of excellence to the vibrant heart of Greater Noida. This flagship residential development is thoughtfully crafted to offer a sanctuary of peace amidst urban convenience. Featuring expansive layouts and premium amenities, Hero Homes redefines contemporary luxury living.
+                Hero Realty is the real estate arm of the renowned Hero Group, one of India's most respected business conglomerates. Established in 2006, the company has carved a niche for itself by developing thoughtfully planned residential projects that combine contemporary architecture, functional design, and sustainability.
               </p>
             </div>
 

@@ -54,7 +54,7 @@ const Overview = ({ setIsOpen }) => (
             </h2>
             <h3 style={{
               fontFamily: F_JOST, fontWeight: '600', fontSize: '16px',
-              color: '#e31837', letterSpacing: '0.05em',
+              color: '#ef4444', letterSpacing: '0.05em',
               textTransform: 'capitalize', margin: 0,
             }}>
               Sector MU, Greater Noida, Uttar Pradesh
