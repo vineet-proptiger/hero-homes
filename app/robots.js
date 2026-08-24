@@ -5,7 +5,7 @@ export default function robots() {
       allow: '/',
       disallow: '',
     },
-    sitemap: 'https://herohomesgreaternoida.com/sitemap.xml',
+    sitemap: 'http://herohomesectormu.co.in/sitemap.xml',
   }
 }
 

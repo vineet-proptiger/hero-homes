@@ -33,6 +33,7 @@ const nephilm = localFont({
 })
 
 export const metadata = {
+  metadataBase: new URL('http://herohomesectormu.co.in'),
   title: 'Hero Homes Sector MU Greater Noida',
   description: "Hero Homes Sector MU Greater Noida — Premium 3 BHK Homes. Excellent Connectivity. Book Now.",
   icons: {
@@ -54,13 +55,13 @@ export default function RootLayout({ children }) {
               "@type": "Article",
               "mainEntityOfPage": {
                 "@type": "WebPage",
-                "@id": "https://herohomesgreaternoida.com/"
+                "@id": "http://herohomesectormu.co.in/"
               },
-              "url": "https://herohomesgreaternoida.com",
+              "url": "http://herohomesectormu.co.in",
               "name": "Hero Homes Sector MU Greater Noida",
               "headline": "Hero Homes Sector MU Greater Noida | Premium 3 BHK Homes",
               "description": "Hero Homes Sector MU Greater Noida — Premium 3 BHK Homes. Excellent Connectivity. Book Now.",
-              "image": "https://herohomesgreaternoida.com/_next/image?url=%2Fimages%2Fhero%2Fbanner1.webp&w=1200&q=75",
+              "image": "http://herohomesectormu.co.in/_next/image?url=%2Fimages%2Fhero%2Fbanner1.webp&w=1200&q=75",
               "author": {
                 "@type": "Organization",
                 "name": "Proptiger Marketing Services Pvt Ltd",

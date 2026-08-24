@@ -1,5 +1,5 @@
 export default function sitemap() {
-  const base = 'https://herohomesgreaternoida.com'
+  const base = 'http://herohomesectormu.co.in'
 
   return [
     {
