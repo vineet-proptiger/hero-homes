@@ -168,7 +168,7 @@ const Highlights = ({ setIsOpen }) => (
                 boxShadow: '0 8px 24px rgba(0,0,0,0.06)',
                 display: 'flex', alignItems: 'center', justifyContent: 'center',
                 margin: '0 auto 24px',
-                color: '#111827', // Dark brown color matching the headings
+                color: '#e31837', // Brand red color for the icon
                 border: '1.5px solid #d32f2f'
               }}>
                 <Icon />
