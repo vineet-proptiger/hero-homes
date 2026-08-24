@@ -529,3 +529,8 @@ nav.fixed {
   background: #e31837;
   border-radius: 2px;
 }
+
+/* Fix for fixed navbar overlapping section headings on anchor click */
+section[id], div[id] {
+  scroll-margin-top: 30px;
+}
