@@ -46,8 +46,8 @@ const ExclusiveAmenities = () => {
             fontFamily: F_JOST, fontWeight: '700', fontSize: '17px',
             color: '#111827', letterSpacing: '0.1em',
             textTransform: 'uppercase', margin: 0,
-            display: 'flex', alignItems: 'center', justifyContent: 'center',
-          }}>
+            display: 'inline-block', alignItems: 'center', justifyContent: 'center',
+          }} className="heading-center-line">
             <ArcIcon />
             EXCLUSIVE TO FOREST RESERVE
           </h2>

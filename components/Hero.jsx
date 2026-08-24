@@ -265,7 +265,7 @@ const Hero = ({ setIsOpen }) => {
             height: auto !important;
             display: flex !important;
             flex-direction: column !important;
-            background: #FFF9E6 !important;
+            background: #ffffff !important;
           }
           
           .desktop-carousel { display: none !important; }

@@ -46,8 +46,8 @@ const Amenities = () => {
             fontFamily: F_JOST, fontWeight: '700', fontSize: '17px',
             letterSpacing: '0.1em',
             textTransform: 'uppercase', margin: 0,
-            display: 'flex', alignItems: 'center', justifyContent: 'center',
-          }}>
+            display: 'inline-block', alignItems: 'center', justifyContent: 'center',
+          }} className="heading-center-line">
             <span style={{ color: '#fff' }}>WORLD-CLASS</span>&nbsp;<span style={{ color: '#e31837' }}>AMENITIES</span>
           </h2>
           {/* <p style={{ fontFamily: F_SANS, color: '#9ca3af', marginTop: '10px' }}>EXPERIENCE MORE EVERY DAY</p> */}

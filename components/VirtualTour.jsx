@@ -91,7 +91,7 @@ const VirtualTour = ({ setIsOpen }) => {
           letterSpacing: '0.18em',
           textTransform: 'uppercase',
           margin: 0
-        }} className="text-[16px] md:text-[20px] drop-shadow-md">
+        }} className="heading-center-line text-[16px] md:text-[20px] drop-shadow-md">
           STEP INTO YOUR FUTURE HOME
         </h2>
       </div>

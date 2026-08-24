@@ -133,7 +133,7 @@ const CarouselSection = ({ setIsOpen }) => {
             <h2 style={{
               fontFamily: F_JOST, fontWeight: '700', fontSize: '24px',
               letterSpacing: '0.1em', margin: 0,
-            }} className="text-center">
+            }} className="heading-center-line text-center">
               <span style={{ color: '#111827' }}>Glimpses of</span>&nbsp;<span style={{ color: '#e31837' }}>Masterpiece</span>
             </h2>
           </div>

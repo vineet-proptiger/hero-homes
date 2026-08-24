@@ -61,7 +61,7 @@ const Gallery = ({ setIsOpen }) => {
               fontFamily: F_JOST, fontWeight: '700', fontSize: '17px',
               color: '#111827', letterSpacing: '0.1em',
               textTransform: 'uppercase', margin: 0,
-            }} className="text-center">HERO HOMES GALLERY</h2>
+            }} className="heading-center-line text-center">HERO HOMES GALLERY</h2>
           </div>
         </div>
 

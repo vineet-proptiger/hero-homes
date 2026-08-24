@@ -10,15 +10,12 @@ const Footer = () => (
   <footer style={{ background: '#111827', color: '#f3f4f6', borderTop: '1px solid #1f2937' }}>
 
     <div style={{ maxWidth: '860px', margin: '0 auto', padding: '64px 24px 40px', textAlign: 'center' }}>
-      <h2 style={{ fontSize: '26px', fontWeight: '700', fontFamily: F_JOST, marginBottom: '8px', textTransform: 'uppercase', letterSpacing: '0.1em', color: '#ffffff' }} data-aos="fade-in">
+      <h2 className="heading-center-line heading-center-line-dark" style={{ fontSize: '26px', fontWeight: '700', fontFamily: F_JOST, marginBottom: '24px', textTransform: 'uppercase', letterSpacing: '0.1em', color: '#ffffff' }} data-aos="fade-in">
         Hero Homes Sector MU Greater Noida
       </h2>
       <p style={{ fontSize: '12px', color: '#e31837', fontFamily: F_JOST, fontWeight: '700', letterSpacing: '0.15em', textTransform: 'uppercase', marginBottom: '16px' }}>
         Premium 3 BHK Homes — Greater Noida
       </p>
-      <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '32px' }}>
-        <span style={{ width: '40px', height: '2px', background: '#e31837' }} />
-      </div>
       <p style={{ fontSize: '15px', color: '#9ca3af', fontFamily: F_SANS, lineHeight: 1.8, marginBottom: '24px', textAlign: 'justify' }}
         data-aos="fade-in" data-aos-delay="100">
         Hero Homes Sector MU Greater Noida is a premium residential development designed around the concept of Resort Urban Living, offering an elevated lifestyle. Features spacious 3BHK residences starting from ₹1.80 Cr*. Thoughtfully curated amenities, iconic skyline views, advanced security, and smart home features — Hero Homes is designed for those who demand the extraordinary.

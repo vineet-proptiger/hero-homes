@@ -41,11 +41,11 @@ const Location = () => {
 
         {/* Section Header */}
         <div style={{ marginBottom: '40px', textAlign: 'center' }} data-aos="fade-up">
-           <h2 className="location-title" style={{
+           <h2 className="heading-center-line location-title" style={{
              fontFamily: F_JOST, fontWeight: '700', fontSize: '17px',
              letterSpacing: '0.1em',
              textTransform: 'uppercase', margin: 0,
-             display: 'flex', alignItems: 'center', justifyContent: 'center',
+             display: 'inline-block', alignItems: 'center', justifyContent: 'center',
            }}>
              <span style={{ color: '#111827' }}>PRIME CONNECTIVITY</span>&nbsp;<span style={{ color: '#e31837' }}>AT SECTOR MU, GREATER NOIDA</span>
            </h2>

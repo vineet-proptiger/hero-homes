@@ -42,8 +42,8 @@ const MasterPlan = ({ setIsOpen }) => {
             fontFamily: F_JOST, fontWeight: '700', fontSize: '17px',
             letterSpacing: '0.1em',
             textTransform: 'uppercase', margin: 0,
-            display: 'flex', alignItems: 'center', justifyContent: 'center',
-          }}>
+            display: 'inline-block', alignItems: 'center', justifyContent: 'center',
+          }} className="heading-center-line">
             <span style={{ color: '#111' }}>FLOOR PLANS</span>&nbsp;<span style={{ color: '#e31837' }}>&amp; LAYOUT</span>
           </h2>
         </div>

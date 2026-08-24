@@ -12,11 +12,11 @@ export default function QuickChat() {
         <div style={{ marginBottom: '40px', textAlign: 'center' }} data-aos="fade-up">
           <h2 style={{
             fontFamily: F_JOST, fontWeight: '700', fontSize: '17px',
-            color: '#111827', letterSpacing: '0.1em',
+            letterSpacing: '0.1em',
             textTransform: 'uppercase', margin: 0,
-            display: 'flex', alignItems: 'center', justifyContent: 'center',
-          }}>
-            REPLY IN ONE TAP — GET IT ON WHATSAPP
+            display: 'inline-block', alignItems: 'center', justifyContent: 'center',
+          }} className="heading-center-line">
+            <span style={{ color: '#111827' }}>REPLY IN ONE TAP</span>&nbsp;<span style={{ color: '#e31837' }}>— GET IT ON WHATSAPP</span>
           </h2>
         </div>
 

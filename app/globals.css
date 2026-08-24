@@ -493,3 +493,39 @@ nav.fixed {
   outline-offset: 3px;
   border-radius: 4px;
 }
+/* Section Heading Accent Lines */
+.heading-center-line {
+  position: relative;
+  padding-bottom: 16px;
+  margin-bottom: 8px !important;
+}
+.heading-center-line::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: #e31837;
+  border-radius: 2px;
+}
+.heading-center-line-dark::after {
+  background: #e31837;
+}
+
+.heading-left-line {
+  position: relative;
+  padding-bottom: 16px;
+  margin-bottom: 8px !important;
+}
+.heading-left-line::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: #e31837;
+  border-radius: 2px;
+}

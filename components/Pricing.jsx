@@ -79,8 +79,8 @@ const Pricing = ({ setIsOpen }) => {
             fontFamily: F_JOST, fontWeight: '700', fontSize: '17px',
             letterSpacing: '0.1em',
             textTransform: 'uppercase', margin: 0,
-            display: 'flex', alignItems: 'center', justifyContent: 'center',
-          }}>
+            display: 'inline-block', alignItems: 'center', justifyContent: 'center',
+          }} className="heading-center-line">
             <span style={{ color: '#111' }}>CONFIGURATIONS</span>&nbsp;<span style={{ color: '#e31837' }}>&amp; PRICING</span>
           </h2>
           {/* <p style={{ fontFamily: F_SANS, fontSize: "13px", color: "#6b7280", marginBottom: "4px" }}>
