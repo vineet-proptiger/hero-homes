@@ -117,12 +117,12 @@ const IconWaves = () => (
 )
 
 const highlights = [
-  { title: 'Spacious Layouts', desc: 'Spacious 2 & 3 BHK layouts with expansive terrace-style decks', Icon: IconHome },
-  { title: 'Nature Views', desc: 'Private balconies overlooking central greens and Military Farms', Icon: IconTrees },
-  { title: 'WFH Nooks', desc: 'Dedicated work-from-home nooks in every home', Icon: IconBuilding },
-  { title: 'Smart Homes', desc: 'Smart home features — smart door lock, video doorbell, smart BLDC fans', Icon: IconSmart },
-  { title: 'Walk-in Wardrobes', desc: 'Walk-in wardrobes in master bedroom', Icon: IconSunCloud },
-  { title: 'Natural Light', desc: 'Maximum natural light and cross-ventilation in every room', Icon: IconWind },
+  { title: 'Luxury Residential Project', desc: 'A rare opportunity to own a premium residence in Greater Noida.', Icon: IconSunCloud },
+  { title: 'Spread Across 4.5 Acres', desc: 'A sprawling development designed with a resort urban living theme.', Icon: IconTrees },
+  { title: '3 Iconic Towers', desc: 'Beautifully designed high-rise towers offering an exclusive lifestyle.', Icon: IconBuilding },
+  { title: 'Smart-Home Features', desc: 'Equipped with the latest smart-home technology for modern living.', Icon: IconSmart },
+  { title: 'Modern Amenities', desc: 'World-class amenities combining relaxation with ultimate sophistication.', Icon: IconWaves },
+  { title: '525 Premium Apartments', desc: 'Spacious and thoughtfully designed 2 & 3 BHK apartments for urban families.', Icon: IconHome },
 ]
 
 const Highlights = ({ setIsOpen }) => (

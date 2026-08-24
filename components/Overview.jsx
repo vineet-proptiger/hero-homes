@@ -25,12 +25,9 @@ const CurvedCorners = ({ bg = '#fff' }) => {
 }
 
 const infoItems = [
-  { label: 'PROJECT TYPE', value: 'LUXURY RESIDENTIAL' },
-  { label: 'TOTAL AREA',   value: '4.5 ACRES' },
-  { label: 'TOWERS',       value: '3 ICONIC TOWERS' },
-  { label: 'APARTMENTS',   value: '525 PREMIUM UNITS' },
-  { label: 'TECHNOLOGY',   value: 'SMART-HOME FEATURES' },
-  { label: 'LIFESTYLE',    value: 'WORLD-CLASS AMENITIES' },
+  { label: 'STATUS',         value: 'NEW LAUNCH' },
+  { label: 'TOTAL AREA',     value: '4.70 ACRES' },
+  { label: 'TOWERS', value: '3 ICONIC TOWERS' },
 ]
 
 const Overview = ({ setIsOpen }) => (
@@ -72,7 +69,7 @@ const Overview = ({ setIsOpen }) => (
               marginTop: 0, marginBottom: '14px',
               textAlign: 'justify',
             }}>
-              <strong style={{ color: '#3A2A0E', fontWeight: '700' }}>Hero Homes Sector MU Greater Noida</strong> is a premium residential development designed around the concept of Resort Urban Living, offering an elevated lifestyle in one of the city's most sought-after locations. Spread across a well-planned <strong style={{ color: '#3A2A0E', fontWeight: '700' }}>4.5-acre land parcel</strong>, the project features 525 thoughtfully crafted apartments across 3 iconic towers, ensuring a perfect balance of luxury, privacy, and modern convenience.
+              <strong style={{ color: '#3A2A0E', fontWeight: '700' }}>Hero Homes Sector MU Greater Noida</strong> is a premium residential development designed around the concept of Resort Urban Living, offering an elevated lifestyle in one of the city's most sought-after locations. Spread across a well-planned <strong style={{ color: '#3A2A0E', fontWeight: '700' }}>4.70-acre land parcel</strong>, the project features 525 thoughtfully crafted apartments across 3 iconic towers, ensuring a perfect balance of luxury, privacy, and modern convenience.
             </p>
             <p className="overview-desc" style={{
               fontFamily: F_SANS, fontSize: '14.5px', color: '#4A4540',

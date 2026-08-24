@@ -398,10 +398,10 @@ const Hero = ({ setIsOpen }) => {
         {/* Bullet Points */}
         <div className="hero-bullets" style={{ marginBottom: '24px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
           {[
-            'Eco-friendly, pedestrian design with zero ground-level vehicular movement',
-            'Enhanced safety ensured through a comprehensive five-level security setup',
-            'Wellness homes: Towers align with sun for natural light & airflow',
-            'Healthy, serene living with 85% open green spaces'
+            '4.7 Acres of Resort-Style Living',
+            '3 Towers · 550 Exclusive Residences',
+            'Wellness-Centric, Sun-Aligned Homes',
+            '25 Minutes from Jewar International Airport'
           ].map((text, i) => (
             <div key={i} className="hero-bullet-item" style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-brand, #C9A96E)" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0, backgroundColor: '#fff', borderRadius: '50%', padding: '2px' }}>

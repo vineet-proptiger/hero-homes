@@ -65,7 +65,7 @@ const Navbar = ({ setIsOpen }) => {
             }
           `}</style>
           <img
-            src={logoImages.tarc}
+            src={logoImages.main}
             alt="Hero Homes Sector MU Greater Noida"
             className="nav-logo"
           />

@@ -8,8 +8,9 @@ const F_SANS = 'var(--font-sans), Open Sans, sans-serif'
 
 const plans = [
   { label: 'Site Master Plan', img: masterplanImages.masterPlan },
-  { label: '2 BHK',           img: masterplanImages.bhk2 },
-  { label: '3 BHK',           img: masterplanImages.bhk3 },
+  { label: '3 BHK + 2T',       img: masterplanImages.bhk3 },
+  { label: '3 BHK + 3T',       img: masterplanImages.bhk3 },
+  { label: '3 BHK + SR',       img: masterplanImages.bhk3 },
 ]
 
 const CurvedCorners = ({ bg = '#ffffff' }) => {
