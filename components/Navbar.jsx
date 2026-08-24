@@ -59,9 +59,9 @@ const Navbar = ({ setIsOpen }) => {
         {/* CENTER LOGO */}
         <a href="#" style={{ flexShrink: 0, display: 'flex', alignItems: 'center' }}>
           <style>{`
-            .nav-logo { height: 55px; width: auto; display: block; object-fit: contain; transform: scale(1.2); transform-origin: center; transition: transform 0.3s ease; }
+            .nav-logo { height: 40px; width: auto; display: block; object-fit: contain; transform: scale(1.1); transform-origin: center; transition: transform 0.3s ease; }
             @media(max-width: 768px) {
-              .nav-logo { height: 48px; transform: scale(1.1); }
+              .nav-logo { height: 40px; transform: scale(1.0); }
             }
           `}</style>
           <img
