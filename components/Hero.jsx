@@ -30,15 +30,19 @@ const Hero = ({ setIsOpen }) => {
           display: block;
         }
 
-        /* Dark gradient overlay — focused strictly on the bottom-left where text is */
+        /* Dark gradient overlay — strictly confined to the text area */
         .hero-overlay {
           position: absolute;
-          inset: 0;
+          bottom: 0;
+          left: 0;
+          width: 850px;
+          height: 450px;
+          max-width: 100%;
           background: radial-gradient(
-            circle at 0% 100%,
-            rgba(0,0,0,0.85) 0%,
-            rgba(0,0,0,0.5) 25%,
-            rgba(0,0,0,0) 45%
+            circle at bottom left,
+            rgba(0,0,0,0.95) 0%,
+            rgba(0,0,0,0.6) 40%,
+            rgba(0,0,0,0) 75%
           );
           z-index: 2;
           pointer-events: none;
@@ -400,6 +404,7 @@ const Hero = ({ setIsOpen }) => {
           {[
             '4.7 Acres of Resort-Style Living',
             '3 Towers · 550 Exclusive Residences',
+            'EOI ₹10L · Construction Linked Plan',
             'Wellness-Centric, Sun-Aligned Homes',
             '25 Minutes from Jewar International Airport'
           ].map((text, i) => (
