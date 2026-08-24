@@ -127,25 +127,15 @@ const CarouselSection = ({ setIsOpen }) => {
       <div className="container mx-auto px-4 md:px-8 max-w-[1200px]">
 
         {/* ── Header Row ── */}
-        <div className="flex items-center justify-between mb-8 gap-6 w-full min-h-[50px]">
-
+        <div className="flex justify-center mb-8 w-full min-h-[50px]">
           {/* Centered Heading */}
-          <div className="flex-1 flex justify-center lg:pl-32">
+          <div className="flex-1 flex justify-center">
             <h2 style={{
               fontFamily: F_JOST, fontWeight: '700', fontSize: '24px',
-              color: '#111827', letterSpacing: '0.1em', margin: 0,
-            }} className="text-center">Glimpses of Masterpiece</h2>
-          </div>
-
-          {/* Right side Buttons */}
-          <div className="flex items-center">
-            <button className="btn-brand hidden sm:flex" onClick={() => setIsOpen(true)} style={{ padding: '12px 24px', fontSize: '12px' }}>
-              ENQUIRE NOW
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="ml-2">
-                <line x1="5" y1="12" x2="19" y2="12" />
-                <polyline points="12 5 19 12 12 19" />
-              </svg>
-            </button>
+              letterSpacing: '0.1em', margin: 0,
+            }} className="text-center">
+              <span style={{ color: '#111827' }}>Glimpses of</span>&nbsp;<span style={{ color: '#e31837' }}>Masterpiece</span>
+            </h2>
           </div>
         </div>
 

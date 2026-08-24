@@ -43,11 +43,11 @@ const Location = () => {
         <div style={{ marginBottom: '40px', textAlign: 'center' }} data-aos="fade-up">
            <h2 className="location-title" style={{
              fontFamily: F_JOST, fontWeight: '700', fontSize: '17px',
-             color: '#111827', letterSpacing: '0.1em',
+             letterSpacing: '0.1em',
              textTransform: 'uppercase', margin: 0,
              display: 'flex', alignItems: 'center', justifyContent: 'center',
            }}>
-             PRIME CONNECTIVITY AT SECTOR MU, GREATER NOIDA
+             <span style={{ color: '#111827' }}>PRIME CONNECTIVITY</span>&nbsp;<span style={{ color: '#e31837' }}>AT SECTOR MU, GREATER NOIDA</span>
            </h2>
         </div>
 

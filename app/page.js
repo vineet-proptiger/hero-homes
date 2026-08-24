@@ -52,24 +52,31 @@ export default function Home() {
       <EnquireModal isOpen={isOpen} setIsOpen={setIsOpen} />
 
       {/* Floating Vertical Enquire Tab — Desktop only */}
-      <button
-        onClick={() => setIsOpen(true)}
-        className="hidden lg:flex btn-floating-tab !py-4 !px-3 shadow-lg items-center justify-center gap-3"
-        style={{
-          writingMode: 'vertical-rl',
-          textOrientation: 'mixed',
-          letterSpacing: '2px',
-        }}
-      >
-        ENQUIRE NOW
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
-          stroke="currentColor" strokeWidth="2.5"
-          strokeLinecap="round" strokeLinejoin="round"
-          style={{ transform: 'rotate(90deg)', marginTop: '4px' }}>
-          <line x1="5" y1="12" x2="19" y2="12" />
-          <polyline points="12 5 19 12 12 19" />
-        </svg>
-      </button>
+      <div className="hidden lg:flex flex-col gap-3 fixed right-0 top-[50%] -translate-y-1/2 z-50">
+        <button
+          onClick={() => setIsOpen(true)}
+          className="btn-floating-tab flex flex-col items-center gap-2 group relative shadow-xl overflow-hidden"
+          style={{ width: '56px', height: '180px', borderRadius: '12px 0 0 12px', background: '#e31837', color: '#ffffff', border: 'none', writingMode: 'vertical-rl', padding: '0', boxSizing: 'border-box' }}
+        >
+          <span className="font-bold tracking-[0.2em] text-[13px] uppercase mt-4 mb-2 flex items-center justify-center gap-3"
+            style={{
+              fontFamily: 'var(--font-sans)',
+              writingMode: 'vertical-rl',
+              textOrientation: 'mixed',
+              letterSpacing: '2px',
+            }}
+          >
+            ENQUIRE NOW
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" strokeWidth="2.5"
+              strokeLinecap="round" strokeLinejoin="round"
+              style={{ transform: 'rotate(90deg)', marginTop: '4px' }}>
+              <line x1="5" y1="12" x2="19" y2="12" />
+              <polyline points="12 5 19 12 12 19" />
+            </svg>
+          </span>
+        </button>
+      </div>
 
       {/* Mobile Sticky Bottom Bar */}
       <style>{`
@@ -105,11 +112,11 @@ export default function Home() {
           onClick={() => setIsOpen(true)}
           className="flex-grow flex items-center justify-center gap-2 py-3 px-4 rounded-full"
           style={{
-            background: 'linear-gradient(135deg, #d8be8d 0%, #b89552 100%)',
-            color: '#13192b',
+            background: '#e31837',
+            color: '#ffffff',
             border: 'none',
             outline: 'none',
-            boxShadow: '0 4px 12px rgba(227, 24, 55, 0.2)'
+            boxShadow: '0 4px 12px rgba(227, 24, 55, 0.3)'
           }}
         >
           <svg className="w-[18px] h-[18px] sm:w-5 sm:h-5 animate-enquire-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
