@@ -10,7 +10,7 @@ const Footer = () => (
   <footer style={{ background: '#111827', color: '#f3f4f6', borderTop: '1px solid #1f2937' }}>
 
     <div style={{ maxWidth: '860px', margin: '0 auto', padding: '64px 24px 40px', textAlign: 'center' }}>
-      <h2 className="heading-center-line heading-center-line-dark" style={{ fontSize: '26px', fontWeight: '700', fontFamily: F_JOST, marginBottom: '24px', textTransform: 'uppercase', letterSpacing: '0.1em', color: '#ffffff' }} data-aos="fade-in">
+      <h2 className="heading-center-line heading-center-line-dark" style={{ fontSize: 'clamp(17px, 5vw, 26px)', fontWeight: '700', fontFamily: F_JOST, marginBottom: '24px', textTransform: 'uppercase', letterSpacing: '0.1em', color: '#ffffff' }} data-aos="fade-in">
         Hero Homes Sector MU Greater Noida
       </h2>
       <p style={{ fontSize: '12px', color: '#e31837', fontFamily: F_JOST, fontWeight: '700', letterSpacing: '0.15em', textTransform: 'uppercase', marginBottom: '16px' }}>
