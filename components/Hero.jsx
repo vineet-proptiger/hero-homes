@@ -4,8 +4,8 @@ import Image from 'next/image'
 import { heroImages } from '../lib/images'
 
 const slides = [
-  { img: heroImages.banner },
-  { img: heroImages.banner2 }
+  { imgDesk: heroImages.banner, imgMob: heroImages.smDevice1 },
+  { imgDesk: heroImages.banner2, imgMob: heroImages.smDevice2 }
 ]
 
 const Hero = ({ setIsOpen }) => {
@@ -30,15 +30,15 @@ const Hero = ({ setIsOpen }) => {
           display: block;
         }
 
-        /* Dark gradient overlay — bottom heavy so text is legible */
+        /* Dark gradient overlay — focused strictly on the bottom-left where text is */
         .hero-overlay {
           position: absolute;
           inset: 0;
-          background: linear-gradient(
-            to right,
-            rgba(0,0,0,0.72) 0%,
-            rgba(0,0,0,0.45) 55%,
-            rgba(0,0,0,0.10) 100%
+          background: radial-gradient(
+            circle at 0% 100%,
+            rgba(0,0,0,0.85) 0%,
+            rgba(0,0,0,0.5) 25%,
+            rgba(0,0,0,0) 45%
           );
           z-index: 2;
           pointer-events: none;
@@ -167,8 +167,6 @@ const Hero = ({ setIsOpen }) => {
           .hero-container {
             width: 100%;
             height: calc(100vh - 80px);
-            min-height: 520px;
-            max-height: 1020px;
           }
           .hero-slider-wrapper {
             position: absolute;
@@ -267,8 +265,7 @@ const Hero = ({ setIsOpen }) => {
             flex-direction: column !important;
             background: #ffffff !important;
           }
-          
-          .desktop-carousel { display: none !important; }
+          .desktop-hero-img { display: none !important; }
           .carousel-dots { display: none !important; }
           
           .mobile-hero-img {
@@ -347,37 +344,40 @@ const Hero = ({ setIsOpen }) => {
       `}} />
 
       {/* ── Slide Wrapper (Grid to stack slides for smooth crossfade) ── */}
-      <div className="hero-slider-wrapper desktop-carousel" style={{ display: 'grid' }}>
+      <div className="hero-slider-wrapper" style={{ display: 'grid' }}>
         {slides.map((slide, index) => (
           <div 
             key={index} 
             className={`slide-layer ${index === currentSlide ? 'active' : ''}`}
             style={{ gridArea: '1 / 1 / 2 / 2' }}
           >
-            <Image
-              src={slide.img}
-              alt={`Banner ${index + 1}`}
-              width={1920}
-              height={800}
-              className="hero-image"
-              priority={index === 0}
-              sizes="100vw"
-            />
+            {/* Desktop Image */}
+            <div className="desktop-hero-img">
+              <Image
+                src={slide.imgDesk}
+                alt={`Banner ${index + 1}`}
+                width={1920}
+                height={800}
+                className="hero-image"
+                priority={index === 0}
+                sizes="100vw"
+              />
+            </div>
+            
+            {/* Mobile Image */}
+            <div className="mobile-hero-img" style={{ display: 'none' }}>
+              <Image
+                src={slide.imgMob}
+                alt={`Mobile Banner ${index + 1}`}
+                width={768}
+                height={800}
+                className="hero-image"
+                priority={index === 0}
+                sizes="100vw"
+              />
+            </div>
           </div>
         ))}
-      </div>
-
-      {/* ── Mobile Single Image ── */}
-      <div className="mobile-hero-img" style={{ display: 'none' }}>
-        <Image
-          src={heroImages.smDevice}
-          alt="Hero Banner Mobile"
-          width={768}
-          height={800}
-          className="hero-image"
-          priority
-          sizes="100vw"
-        />
       </div>
 
       {/* ── Dark overlay for text legibility ── */}
