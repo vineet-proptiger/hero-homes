@@ -25,7 +25,7 @@ const CurvedCorners = ({ bg = '#fff' }) => {
 }
 
 const infoItems = [
-  { label: 'STATUS',         value: 'NEW LAUNCH' },
+  { label: 'STATUS',         value: 'PRE-LAUNCH' },
   { label: 'TOTAL AREA',     value: '4.70 ACRES' },
   { label: 'TOWERS', value: '3 ICONIC TOWERS' },
 ]
