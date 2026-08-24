@@ -118,7 +118,7 @@ const IconWaves = () => (
 
 const highlights = [
   { title: 'Luxury Residential Project', desc: 'A rare opportunity to own a premium residence in Greater Noida.', Icon: IconSunCloud },
-  { title: 'Spread Across 4.5 Acres', desc: 'A sprawling development designed with a resort urban living theme.', Icon: IconTrees },
+  { title: 'Spread Across 4.70 Acres', desc: 'A sprawling development designed with a resort urban living theme.', Icon: IconTrees },
   { title: '3 Iconic Towers', desc: 'Beautifully designed high-rise towers offering an exclusive lifestyle.', Icon: IconBuilding },
   { title: 'Smart-Home Features', desc: 'Equipped with the latest smart-home technology for modern living.', Icon: IconSmart },
   { title: 'Modern Amenities', desc: 'World-class amenities combining relaxation with ultimate sophistication.', Icon: IconWaves },

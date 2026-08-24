@@ -1,13 +1,12 @@
 'use client'
 import React from 'react'
 import {
-  MonitorPlay, Sparkles, Flower2, Waves,
+  Dumbbell, Sparkles, Flower2, Waves,
   Footprints, Smile, Leaf, Activity
 } from 'lucide-react'
 
 const F_JOST = 'var(--font-jost), Montserrat, sans-serif'
 const F_SANS = 'var(--font-sans), Open Sans, sans-serif'
-
 
 const CurvedCorners = ({ bg = '#fff', color = '#e5e7eb' }) => {
   const corners = [
@@ -22,7 +21,7 @@ const CurvedCorners = ({ bg = '#fff', color = '#e5e7eb' }) => {
 }
 
 const newAmenities = [
-  { icon: MonitorPlay, title: 'CLUBHOUSE',          desc: 'Exclusive resident clubhouse.', color: '#F59E0B' },
+  { icon: Dumbbell, title: 'Gymnasium',          desc: 'Exclusive resident clubhouse.', color: '#F59E0B' },
   { icon: Sparkles,    title: 'GRAND CLUBHOUSE',    desc: 'Grand clubhouse with modern facilities.', color: '#3B82F6' },
   { icon: Flower2,     title: 'YOGA PAVILION',      desc: 'Dedicated space for yoga and meditation.', color: '#8B5CF6' },
   { icon: Waves,       title: 'SWIMMING POOL',      desc: 'Refreshing swimming pool.', color: '#EF4444' },
