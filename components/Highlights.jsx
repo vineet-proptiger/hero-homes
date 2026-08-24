@@ -2,8 +2,8 @@
 
 const F_SANS = 'var(--font-sans), Open Sans, sans-serif'
 const F_JOST = 'var(--font-jost), Montserrat, sans-serif'
-const BORDER_COLOR = '#9C846C'
-const BG = '#FAF5F5'
+const BORDER_COLOR = '#e31837'
+const BG = '#f8fafc'
 
 
 /* Curved concave notch at each corner of the border box */
@@ -133,11 +133,11 @@ const Highlights = ({ setIsOpen }) => (
       <div style={{ textAlign: 'center', marginBottom: '40px' }} data-aos="fade-up">
         <h2 style={{
           fontFamily: F_JOST, fontWeight: '700', fontSize: '17px',
-          color: '#3A2A0E', letterSpacing: '0.1em',
+          letterSpacing: '0.1em',
           textTransform: 'uppercase', margin: 0,
           display: 'flex', alignItems: 'center', justifyContent: 'center',
         }}>
-          PROJECT HIGHLIGHTS &amp; USPs
+          <span style={{ color: '#111' }}>PROJECT HIGHLIGHTS</span>&nbsp;<span style={{ color: '#e31837' }}>&amp; USPs</span>
         </h2>
       </div>
 
@@ -154,7 +154,7 @@ const Highlights = ({ setIsOpen }) => (
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[1px]" style={{ background: BORDER_COLOR }}>
           {highlights.map(({ title, desc, Icon }, i) => {
-            const bgColors = ['#FDF8F6', '#FFFDF2', '#F4FAF4', '#F2FAFD', '#FCF4F4', '#F4F7FC'];
+            const bgColors = ['#f8fafc', '#FFFDF2', '#F4FAF4', '#F2FAFD', '#FCF4F4', '#F4F7FC'];
             return (
               <div key={i} style={{
                 padding: '36px 20px 28px',
@@ -168,7 +168,7 @@ const Highlights = ({ setIsOpen }) => (
                 boxShadow: '0 8px 24px rgba(0,0,0,0.06)',
                 display: 'flex', alignItems: 'center', justifyContent: 'center',
                 margin: '0 auto 24px',
-                color: '#3A2A0E', // Dark brown color matching the headings
+                color: '#111827', // Dark brown color matching the headings
                 border: '1.5px solid #d32f2f'
               }}>
                 <Icon />
@@ -177,7 +177,7 @@ const Highlights = ({ setIsOpen }) => (
               {/* Title */}
               <h3 style={{
                 fontFamily: F_JOST, fontSize: '12.5px', fontWeight: '700',
-                color: '#3A2A0E', letterSpacing: '0.1em',
+                color: '#111827', letterSpacing: '0.1em',
                 textTransform: 'uppercase', margin: '0 0 12px',
               }}>{title}</h3>
 

@@ -14,7 +14,7 @@ const plans = [
 ]
 
 const CurvedCorners = ({ bg = '#ffffff' }) => {
-  const BORDER_COLOR = '#9C846C';
+  const BORDER_COLOR = '#e31837';
   const corners = [
     { top: '-1px', left: '-1px', borderRight: `1px solid ${BORDER_COLOR}`, borderBottom: `1px solid ${BORDER_COLOR}`, borderBottomRightRadius: '18px' },
     { top: '-1px', right: '-1px', borderLeft: `1px solid ${BORDER_COLOR}`, borderBottom: `1px solid ${BORDER_COLOR}`, borderBottomLeftRadius: '18px' },
@@ -40,11 +40,11 @@ const MasterPlan = ({ setIsOpen }) => {
         <div style={{ marginBottom: '40px', textAlign: 'center' }} data-aos="fade-up">
           <h2 style={{
             fontFamily: F_JOST, fontWeight: '700', fontSize: '17px',
-            color: '#3A2A0E', letterSpacing: '0.1em',
+            letterSpacing: '0.1em',
             textTransform: 'uppercase', margin: 0,
             display: 'flex', alignItems: 'center', justifyContent: 'center',
           }}>
-            FLOOR PLANS &amp; LAYOUT
+            <span style={{ color: '#111' }}>FLOOR PLANS</span>&nbsp;<span style={{ color: '#e31837' }}>&amp; LAYOUT</span>
           </h2>
         </div>
 
@@ -55,7 +55,7 @@ const MasterPlan = ({ setIsOpen }) => {
             <div style={{
               background: '#fff', 
               position: 'relative',
-              border: '1px solid #9C846C', 
+              border: '1px solid #e31837', 
               height: '100%',
               display: 'flex', flexDirection: 'column'
             }}>
@@ -63,12 +63,12 @@ const MasterPlan = ({ setIsOpen }) => {
               
               {/* Tab header */}
               <div style={{
-                background: '#FAF5F5',
-                padding: '24px 28px', borderBottom: '1px solid #D5C2A8'
+                background: '#fef2f2',
+                padding: '24px 28px', borderBottom: '1px solid #fee2e2'
               }}>
                 <p style={{
                   fontFamily: F_JOST, fontWeight: '700', fontSize: '14px',
-                  color: '#3A2A0E', letterSpacing: '0.1em',
+                  color: '#111', letterSpacing: '0.1em',
                   textTransform: 'uppercase', margin: 0
                 }}>
                   Select Floor Plan
@@ -87,17 +87,17 @@ const MasterPlan = ({ setIsOpen }) => {
                         width: '100%', display: 'flex', alignItems: 'center',
                         justifyContent: 'space-between',
                         padding: '20px 28px',
-                        background: isActive ? '#FDF8F6' : 'transparent',
-                        borderLeft: isActive ? '3px solid #9C846C' : '3px solid transparent',
-                        borderBottom: '1px solid #EAE5D9',
+                        background: isActive ? '#fef2f2' : 'transparent',
+                        borderLeft: isActive ? '3px solid #e31837' : '3px solid transparent',
+                        borderBottom: '1px solid #f3f4f6',
                         transition: 'all 0.3s ease',
                       }}
                     >
                       <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
                         <span style={{
                           width: '28px', height: '28px', borderRadius: '50%',
-                          background: isActive ? '#9C846C' : '#F4EFE6',
-                          color: isActive ? '#fff' : '#684C1B',
+                          background: isActive ? '#e31837' : '#f3f4f6',
+                          color: isActive ? '#fff' : '#6b7280',
                           display: 'flex', alignItems: 'center', justifyContent: 'center',
                           fontSize: '11px', fontWeight: '700', fontFamily: F_JOST
                         }}>
@@ -106,13 +106,13 @@ const MasterPlan = ({ setIsOpen }) => {
                         <span style={{
                           fontFamily: F_SANS, fontWeight: isActive ? '700' : '600',
                           fontSize: '15px',
-                          color: isActive ? '#3A2A0E' : '#6b7280'
+                          color: isActive ? '#111' : '#6b7280'
                         }}>
                           {plan.label}
                         </span>
                       </div>
                       <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
-                        stroke={isActive ? '#9C846C' : '#d1d5db'} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                        stroke={isActive ? '#e31837' : '#d1d5db'} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                         <polyline points="9 18 15 12 9 6" />
                       </svg>
                     </button>
@@ -121,8 +121,8 @@ const MasterPlan = ({ setIsOpen }) => {
               </div>
 
               {/* Note */}
-              <div style={{ padding: '24px 28px', borderTop: '1px solid #D5C2A8', background: '#ffffff' }}>
-                <p style={{ fontFamily: F_SANS, fontSize: '13px', color: '#684C1B', margin: 0, lineHeight: 1.6 }}>
+              <div style={{ padding: '24px 28px', borderTop: '1px solid #fee2e2', background: '#ffffff' }}>
+                <p style={{ fontFamily: F_SANS, fontSize: '13px', color: '#6b7280', margin: 0, lineHeight: 1.6 }}>
                   Register to receive detailed floor plans &amp; pricing directly to your inbox.
                 </p>
               </div>
@@ -133,7 +133,7 @@ const MasterPlan = ({ setIsOpen }) => {
           <div className="w-full lg:flex-1" data-aos="fade-left">
             <div style={{
               position: 'relative', 
-              border: '1px solid #9C846C',
+              border: '1px solid #e31837',
               height: '100%', minHeight: '450px',
               background: '#ffffff'
             }}>
@@ -142,7 +142,7 @@ const MasterPlan = ({ setIsOpen }) => {
               {/* Plan label top-left */}
               <div style={{
                 position: 'absolute', top: '24px', left: '24px', zIndex: 10,
-                background: '#3A2A0E',
+                background: '#e31837',
                 padding: '6px 14px',
               }}>
                 <span style={{
@@ -160,7 +160,7 @@ const MasterPlan = ({ setIsOpen }) => {
               {/* Dark overlay */}
               <div style={{
                 position: 'absolute', inset: 0,
-                background: 'rgba(58, 42, 14, 0.45)', // Dark brown tint
+                background: 'rgba(0, 0, 0, 0.55)', // Dark tint
               }} />
 
               {/* CTA in center */}

@@ -133,7 +133,7 @@ const CarouselSection = ({ setIsOpen }) => {
           <div className="flex-1 flex justify-center lg:pl-32">
             <h2 style={{
               fontFamily: F_JOST, fontWeight: '700', fontSize: '24px',
-              color: '#3A2A0E', letterSpacing: '0.1em', margin: 0,
+              color: '#111827', letterSpacing: '0.1em', margin: 0,
             }} className="text-center">Glimpses of Masterpiece</h2>
           </div>
 

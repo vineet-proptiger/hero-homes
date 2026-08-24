@@ -9,11 +9,11 @@ const ArcIcon = () => (
     width="28" height="14" viewBox="0 0 28 14" fill="none"
     style={{ display: 'inline-block', marginRight: '10px', verticalAlign: 'middle', marginBottom: '3px' }}
   >
-    <path d="M2 12 Q14 2 26 12" stroke="#684C1B" strokeWidth="1.5" fill="none" strokeLinecap="round"/>
+    <path d="M2 12 Q14 2 26 12" stroke="#4b5563" strokeWidth="1.5" fill="none" strokeLinecap="round"/>
   </svg>
 )
 
-const CurvedCorners = ({ bg = '#EAE5DC', color = '#D5C2A8' }) => {
+const CurvedCorners = ({ bg = '#f8fafc', color = '#e5e7eb' }) => {
   const corners = [
     { top: '-1px', left: '-1px', borderRight: `1px solid ${color}`, borderBottom: `1px solid ${color}`, borderBottomRightRadius: '18px' },
     { top: '-1px', right: '-1px', borderLeft: `1px solid ${color}`, borderBottom: `1px solid ${color}`, borderBottomLeftRadius: '18px' },
@@ -36,7 +36,7 @@ const JapaneseExcellence = () => {
   return (
     <section id="japanese-excellence" style={{
       padding: '72px 0',
-      background: '#EAE5DC', // Match the beige background
+      background: '#f8fafc', // Match the beige background
     }}>
       <div className="container mx-auto px-4 md:px-8 max-w-[1100px] relative z-10">
 
@@ -44,7 +44,7 @@ const JapaneseExcellence = () => {
         <div style={{ marginBottom: '40px', textAlign: 'center' }} data-aos="fade-up">
           <h2 style={{
             fontFamily: F_JOST, fontWeight: '700', fontSize: '17px',
-            color: '#3A2A0E', letterSpacing: '0.1em',
+            color: '#111827', letterSpacing: '0.1em',
             textTransform: 'uppercase', margin: 0,
             display: 'flex', alignItems: 'center', justifyContent: 'center',
           }}>
@@ -65,15 +65,15 @@ const JapaneseExcellence = () => {
         {/* Grid Container */}
         <div data-aos="fade-up" data-aos-delay="100" style={{
           position: 'relative',
-          border: '1px solid #D5C2A8',
+          border: '1px solid #e5e7eb',
           margin: '0 auto',
         }}>
-          <CurvedCorners color="#D5C2A8" bg="#EAE5DC" />
+          <CurvedCorners color="#e5e7eb" bg="#f8fafc" />
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-[1px] bg-[#D5C2A8]">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-[1px] bg-[#e5e7eb]">
             {excellenceItems.map((item, idx) => (
               <div key={idx} className="flex flex-col justify-center" style={{
-                background: '#EAE5DC',
+                background: '#f8fafc',
                 padding: '36px 32px',
               }}>
                 <h3 style={{

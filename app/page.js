@@ -109,7 +109,7 @@ export default function Home() {
             color: '#13192b',
             border: 'none',
             outline: 'none',
-            boxShadow: '0 4px 12px rgba(201, 169, 110, 0.2)'
+            boxShadow: '0 4px 12px rgba(227, 24, 55, 0.2)'
           }}
         >
           <svg className="w-[18px] h-[18px] sm:w-5 sm:h-5 animate-enquire-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">

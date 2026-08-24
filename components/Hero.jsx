@@ -122,13 +122,13 @@ const Hero = ({ setIsOpen }) => {
         /* First button — white text + white border on dark hero bg */
         .hero-btn-one {
           color: #fff !important;
-          border-color: rgba(255,255,255,0.9) !important;
+          border: 1.5px solid rgba(255,255,255,0.9) !important;
           background: transparent !important;
         }
         .hero-btn-one:hover {
-          background: var(--color-brand) !important;
-          color: #fff !important;
-          border-color: var(--color-brand) !important;
+          background: #ffffff !important;
+          color: #e31837 !important;
+          border-color: #ffffff !important;
         }
 
         /* RERA text */
@@ -393,7 +393,7 @@ const Hero = ({ setIsOpen }) => {
 
         {/* Subtitle */}
         <p className="hero-subtitle">
-          <span style={{ fontSize: '0.85em', fontWeight: 500, textTransform: 'none' }}>Sector MU, Greater Noida, Uttar Pradesh (Noida-Greater Noida Expressway Corridor)</span>
+          <span style={{ fontSize: '0.85em', fontWeight: 500, textTransform: 'none' }}>Sector MU, Greater Noida, Uttar Pradesh</span>
         </p>
         {/* Bullet Points */}
         <div className="hero-bullets" style={{ marginBottom: '24px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
@@ -404,7 +404,7 @@ const Hero = ({ setIsOpen }) => {
             '25 Minutes from Jewar International Airport'
           ].map((text, i) => (
             <div key={i} className="hero-bullet-item" style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-brand, #C9A96E)" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0, backgroundColor: '#fff', borderRadius: '50%', padding: '2px' }}>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-brand, #e31837)" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0, backgroundColor: '#fff', borderRadius: '50%', padding: '2px' }}>
                 <polyline points="20 6 9 17 4 12" />
               </svg>
               <span className="hero-bullet-text" style={{ color: '#fff', fontFamily: 'var(--font-sans), Open Sans, sans-serif', fontSize: 'clamp(13px, 1.5vw, 18px)', fontWeight: '500', letterSpacing: '0.02em', textShadow: '0 1px 4px rgba(0,0,0,0.5)' }}>

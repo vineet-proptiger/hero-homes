@@ -46,7 +46,7 @@ const units = [
 ];
 
 const CurvedCorners = ({ bg = '#f7f7f7' }) => {
-  const BORDER_COLOR = '#D5C2A8';
+  const BORDER_COLOR = '#e5e7eb';
   const corners = [
     { top: '-1px', left: '-1px', borderRight: `1px solid ${BORDER_COLOR}`, borderBottom: `1px solid ${BORDER_COLOR}`, borderBottomRightRadius: '18px' },
     { top: '-1px', right: '-1px', borderLeft: `1px solid ${BORDER_COLOR}`, borderBottom: `1px solid ${BORDER_COLOR}`, borderBottomLeftRadius: '18px' },
@@ -77,11 +77,11 @@ const Pricing = ({ setIsOpen }) => {
         <div className="text-center mb-16" data-aos="fade-up">
           <h2 style={{
             fontFamily: F_JOST, fontWeight: '700', fontSize: '17px',
-            color: '#3A2A0E', letterSpacing: '0.1em',
+            letterSpacing: '0.1em',
             textTransform: 'uppercase', margin: 0,
             display: 'flex', alignItems: 'center', justifyContent: 'center',
           }}>
-            CONFIGURATIONS &amp; PRICING
+            <span style={{ color: '#111' }}>CONFIGURATIONS</span>&nbsp;<span style={{ color: '#e31837' }}>&amp; PRICING</span>
           </h2>
           {/* <p style={{ fontFamily: F_SANS, fontSize: "13px", color: "#6b7280", marginBottom: "4px" }}>
             Hero Homes offers thoughtfully crafted homes designed for modern urban living
@@ -104,7 +104,7 @@ const Pricing = ({ setIsOpen }) => {
               data-aos-delay={idx * 150}
               className={`group relative bg-white border transition-all duration-500 ${unit.isPopular ? "lg:scale-105 z-20" : "z-10"}`}
               style={{
-                borderColor: '#D5C2A8',
+                borderColor: '#e5e7eb',
                 borderRadius: '0',
                 overflow: 'visible',
                 boxShadow: 'none'
@@ -124,22 +124,22 @@ const Pricing = ({ setIsOpen }) => {
               <div className="relative p-8 pb-6 border-b border-[#EAE5D9] pt-14">
                 <div
                   className="absolute inset-0 opacity-30 transition-opacity"
-                  style={{ background: `linear-gradient(135deg, #FDF8F6 0%, transparent 100%)` }}
+                  style={{ background: `linear-gradient(135deg, #f8fafc 0%, transparent 100%)` }}
                 />
                 <h3
                   className="text-2xl font-bold mb-2 relative z-10 uppercase"
-                  style={{ fontFamily: F_JOST, color: '#3A2A0E', letterSpacing: "0.05em" }}
+                  style={{ fontFamily: F_JOST, color: '#111827', letterSpacing: "0.05em" }}
                 >
                   {unit.type}
                 </h3>
                 {unit.subtitle ? (
-                  <p className="text-[15px] relative z-10 mb-2 leading-tight" style={{ fontFamily: F_SANS, color: '#684C1B' }}>
+                  <p className="text-[15px] relative z-10 mb-2 leading-tight" style={{ fontFamily: F_SANS, color: '#4b5563' }}>
                     {unit.subtitle}
                   </p>
                 ) : (
                   <div className="flex items-center gap-2 relative z-10">
-                    <span className="text-[12px] uppercase tracking-wider font-semibold" style={{ fontFamily: F_SANS, color: '#9C846C' }}>Size:</span>
-                    <p className="text-[15px] font-semibold" style={{ fontFamily: F_SANS, color: '#3A2A0E' }}>
+                    <span className="text-[12px] uppercase tracking-wider font-semibold" style={{ fontFamily: F_SANS, color: '#e31837' }}>Size:</span>
+                    <p className="text-[15px] font-semibold" style={{ fontFamily: F_SANS, color: '#111827' }}>
                       {unit.size}
                     </p>
                   </div>
@@ -148,14 +148,14 @@ const Pricing = ({ setIsOpen }) => {
 
               <div className="p-8 pt-8">
                 <div className="mb-8">
-                  <span className="text-[11px] uppercase tracking-[0.2em] font-semibold block mb-2" style={{ fontFamily: F_JOST, color: '#9C846C' }}>Starting At</span>
+                  <span className="text-[11px] uppercase tracking-[0.2em] font-semibold block mb-2" style={{ fontFamily: F_JOST, color: '#e31837' }}>Starting At</span>
                   <div className="flex items-center gap-3 flex-nowrap whitespace-nowrap">
                     {unit.oldPrice && (
-                      <span className="text-lg line-through font-medium opacity-60" style={{ fontFamily: F_SANS, color: '#9C846C' }}>
+                      <span className="text-lg line-through font-medium opacity-60" style={{ fontFamily: F_SANS, color: '#e31837' }}>
                         {unit.oldPrice}
                       </span>
                     )}
-                    <p className="text-3xl font-bold" style={{ fontFamily: F_JOST, color: '#3A2A0E' }}>
+                    <p className="text-3xl font-bold" style={{ fontFamily: F_JOST, color: '#111827' }}>
                       {unit.price}
                     </p>
                   </div>
@@ -165,9 +165,9 @@ const Pricing = ({ setIsOpen }) => {
                   {['Unlock Pricing & Floor Plans', 'Attractive Payment Plan', 'Premium Luxury Residence'].map((feature, fIdx) => (
                     <div key={fIdx} className="flex items-start gap-4">
                       <div className="mt-1 flex-shrink-0 flex items-center justify-center">
-                        <Check size={18} strokeWidth={2.5} style={{ color: '#9C846C' }} />
+                        <Check size={18} strokeWidth={2.5} style={{ color: '#e31837' }} />
                       </div>
-                      <span className="font-medium text-[15px]" style={{ fontFamily: F_SANS, color: '#3A2A0E' }}>{feature}</span>
+                      <span className="font-medium text-[15px]" style={{ fontFamily: F_SANS, color: '#111827' }}>{feature}</span>
                     </div>
                   ))}
                 </div>

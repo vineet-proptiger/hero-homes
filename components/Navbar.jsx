@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react'
 import { Menu, X, Phone } from 'lucide-react'
 import { logoImages } from '../lib/images'
 
-const NAV_TEXT = '#684C1B'
+const NAV_TEXT = '#4b5563'
 const F_JOST   = 'var(--font-jost), Montserrat, sans-serif'
 const F_SANS   = 'var(--font-sans), Open Sans, sans-serif'
 
@@ -25,7 +25,7 @@ const Navbar = ({ setIsOpen }) => {
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
-  const hover   = e => (e.currentTarget.style.color = '#C9A96E')
+  const hover   = e => (e.currentTarget.style.color = '#e31837')
   const unhover = e => (e.currentTarget.style.color = NAV_TEXT)
 
   return (
@@ -91,7 +91,7 @@ const Navbar = ({ setIsOpen }) => {
             fontFamily: F_JOST,
             fontSize: '14px',
             letterSpacing: '0.04em',
-            boxShadow: '0 4px 12px rgba(201, 169, 110, 0.2)',
+            boxShadow: '0 4px 12px rgba(227, 24, 55, 0.2)',
           }}>
             <Phone size={15} fill="currentColor" />
             9718344024
@@ -145,7 +145,7 @@ const Navbar = ({ setIsOpen }) => {
               fontSize: '13px',
               letterSpacing: '0.04em',
               textDecoration: 'none',
-              boxShadow: '0 4px 12px rgba(201, 169, 110, 0.15)',
+              boxShadow: '0 4px 12px rgba(227, 24, 55, 0.15)',
             }}>
               <Phone size={15} fill="currentColor" />
               9718344024

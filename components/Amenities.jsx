@@ -44,23 +44,24 @@ const Amenities = () => {
         <div style={{ marginBottom: '40px', textAlign: 'center' }} data-aos="fade-up">
           <h2 style={{
             fontFamily: F_JOST, fontWeight: '700', fontSize: '17px',
-            color: '#3A2A0E', letterSpacing: '0.1em',
+            letterSpacing: '0.1em',
             textTransform: 'uppercase', margin: 0,
             display: 'flex', alignItems: 'center', justifyContent: 'center',
           }}>
-            LIFESTYLE AMENITIES – EXPERIENCE MORE EVERY DAY
+            <span style={{ color: '#111' }}>WORLD-CLASS</span>&nbsp;<span style={{ color: '#e31837' }}>AMENITIES</span>
           </h2>
+          {/* <p style={{ fontFamily: F_SANS, color: '#666', marginTop: '10px' }}>EXPERIENCE MORE EVERY DAY</p> */}
         </div>
 
         {/* Grid Container */}
         <div data-aos="fade-up" data-aos-delay="100" style={{
           position: 'relative',
-          border: '1px solid #9C846C',
+          border: '1px solid #e31837',
           margin: '0 auto',
         }}>
-          <CurvedCorners color="#9C846C" bg="#fff" />
+          <CurvedCorners color="#e31837" bg="#fff" />
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[1px]" style={{ background: '#9C846C' }}>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[1px]" style={{ background: '#e31837' }}>
             {newAmenities.map((item, idx) => (
               <div key={idx} className="bg-white flex flex-col items-center group" style={{
                 padding: '48px 24px',
@@ -74,7 +75,7 @@ const Amenities = () => {
                 {/* Title */}
                 <h3 style={{
                   fontFamily: F_JOST, fontSize: '15px', fontWeight: '600',
-                  color: '#684C1B', letterSpacing: '0.12em', margin: '0 0 12px'
+                  color: '#4b5563', letterSpacing: '0.12em', margin: '0 0 12px'
                 }}>
                   {item.title}
                 </h3>

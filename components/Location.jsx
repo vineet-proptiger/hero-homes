@@ -18,7 +18,7 @@ const locationItems = [
 ]
 
 const CurvedCorners = ({ bg = '#ffffff' }) => {
-  const BORDER_COLOR = '#9C846C';
+  const BORDER_COLOR = '#e31837';
   const corners = [
     { top: '-1px', left: '-1px', borderRight: `1px solid ${BORDER_COLOR}`, borderBottom: `1px solid ${BORDER_COLOR}`, borderBottomRightRadius: '18px' },
     { top: '-1px', right: '-1px', borderLeft: `1px solid ${BORDER_COLOR}`, borderBottom: `1px solid ${BORDER_COLOR}`, borderBottomLeftRadius: '18px' },
@@ -43,7 +43,7 @@ const Location = () => {
         <div style={{ marginBottom: '40px', textAlign: 'center' }} data-aos="fade-up">
            <h2 className="location-title" style={{
              fontFamily: F_JOST, fontWeight: '700', fontSize: '17px',
-             color: '#3A2A0E', letterSpacing: '0.1em',
+             color: '#111827', letterSpacing: '0.1em',
              textTransform: 'uppercase', margin: 0,
              display: 'flex', alignItems: 'center', justifyContent: 'center',
            }}>
@@ -57,7 +57,7 @@ const Location = () => {
           <div className="w-full lg:w-[45%]" data-aos="fade-right">
             <div style={{
               position: 'relative',
-              border: '1px solid #9C846C',
+              border: '1px solid #e31837',
               background: '#ffffff',
               height: '100%',
               display: 'flex',
@@ -72,9 +72,9 @@ const Location = () => {
                       display: 'flex', alignItems: 'center',
                       fontFamily: F_SANS,
                     }}>
-                      <span style={{ color: '#3A2A0E', fontWeight: '600', fontSize: '14.5px' }}>{item.name}</span>
-                      <div style={{ flex: 1, borderBottom: '1.5px dotted #D5C2A8', margin: '0 16px', opacity: 0.8, position: 'relative', top: '2px' }} />
-                      <span style={{ color: '#9C846C', fontWeight: '700', fontSize: '13px', letterSpacing: '0.02em', whiteSpace: 'nowrap' }}>{item.dist}</span>
+                      <span style={{ color: '#111827', fontWeight: '600', fontSize: '14.5px' }}>{item.name}</span>
+                      <div style={{ flex: 1, borderBottom: '1.5px dotted #e5e7eb', margin: '0 16px', opacity: 0.8, position: 'relative', top: '2px' }} />
+                      <span style={{ color: '#e31837', fontWeight: '700', fontSize: '13px', letterSpacing: '0.02em', whiteSpace: 'nowrap' }}>{item.dist}</span>
                     </div>
                   ))}
                 </div>
@@ -85,7 +85,7 @@ const Location = () => {
           {/* RIGHT — Map */}
           <div className="w-full lg:flex-1" data-aos="fade-left" style={{ minHeight: '420px' }}>
             <div style={{
-              border: '1px solid #9C846C',
+              border: '1px solid #e31837',
               height: '100%', minHeight: '420px',
               position: 'relative',
               background: '#ffffff'

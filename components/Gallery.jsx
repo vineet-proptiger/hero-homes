@@ -8,7 +8,7 @@ const F_JOST = 'var(--font-jost), Montserrat, sans-serif'
 const ArcIcon = () => (
   <svg width="28" height="14" viewBox="0 0 28 14" fill="none"
     style={{ display: 'inline-block', marginRight: '10px', verticalAlign: 'middle', marginBottom: '3px' }}>
-    <path d="M2 12 Q14 2 26 12" stroke="#684C1B" strokeWidth="1.5" fill="none" strokeLinecap="round"/>
+    <path d="M2 12 Q14 2 26 12" stroke="#4b5563" strokeWidth="1.5" fill="none" strokeLinecap="round"/>
   </svg>
 )
 
@@ -59,7 +59,7 @@ const Gallery = ({ setIsOpen }) => {
             <ArcIcon />
             <h2 style={{
               fontFamily: F_JOST, fontWeight: '700', fontSize: '17px',
-              color: '#3A2A0E', letterSpacing: '0.1em',
+              color: '#111827', letterSpacing: '0.1em',
               textTransform: 'uppercase', margin: 0,
             }} className="text-center">HERO HOMES GALLERY</h2>
           </div>
@@ -117,19 +117,19 @@ const Gallery = ({ setIsOpen }) => {
                 fontSize: '12px',
                 fontWeight: '700',
                 letterSpacing: '0.15em',
-                color: '#684C1B',
-                border: '1px solid #D5C2A8',
+                color: '#4b5563',
+                border: '1px solid #e5e7eb',
                 padding: '14px 36px',
                 background: 'transparent',
                 cursor: 'pointer',
               }}
               onMouseEnter={e => {
-                e.currentTarget.style.background = '#684C1B'
+                e.currentTarget.style.background = '#4b5563'
                 e.currentTarget.style.color = '#fff'
               }}
               onMouseLeave={e => {
                 e.currentTarget.style.background = 'transparent'
-                e.currentTarget.style.color = '#684C1B'
+                e.currentTarget.style.color = '#4b5563'
               }}
             >
               {showAll ? 'SHOW LESS' : 'VIEW ALL GALLERY'}

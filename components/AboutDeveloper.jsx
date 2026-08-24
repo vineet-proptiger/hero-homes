@@ -128,7 +128,7 @@ const ContactForm = () => {
 }
 
 const CurvedCorners = ({ bg = '#ffffff' }) => {
-  const BORDER_COLOR = '#9C846C';
+  const BORDER_COLOR = '#e31837';
   const corners = [
     { top: '-1px', left: '-1px', borderRight: `1px solid ${BORDER_COLOR}`, borderBottom: `1px solid ${BORDER_COLOR}`, borderBottomRightRadius: '18px' },
     { top: '-1px', right: '-1px', borderLeft: `1px solid ${BORDER_COLOR}`, borderBottom: `1px solid ${BORDER_COLOR}`, borderBottomLeftRadius: '18px' },
@@ -148,7 +148,7 @@ const AboutDeveloper = ({ setIsOpen }) => (
       <div className="text-center mb-12" data-aos="fade-up">
         <h2 style={{
           fontFamily: F_JOST, fontWeight: '700', fontSize: '17px',
-          color: '#3A2A0E', letterSpacing: '0.1em',
+          color: '#111827', letterSpacing: '0.1em',
           textTransform: 'uppercase', margin: 0,
           display: 'flex', alignItems: 'center', justifyContent: 'center',
         }}>
@@ -164,30 +164,30 @@ const AboutDeveloper = ({ setIsOpen }) => (
           background: '#fff',
           display: 'flex', flexDirection: 'column', height: '100%',
           position: 'relative',
-          border: '1px solid #9C846C',
+          border: '1px solid #e31837',
         }} data-aos="fade-right" data-aos-delay="100">
           <CurvedCorners bg="#ffffff" />
 
           {/* Light Header */}
           <div style={{
-            background: '#FAF5F5',
+            background: '#f8fafc',
             padding: '24px 32px', position: 'relative',
-            borderBottom: '1px solid #D5C2A8'
+            borderBottom: '1px solid #e5e7eb'
           }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '16px', position: 'relative' }}>
               <div style={{
                 width: '48px', height: '48px', borderRadius: '50%', flexShrink: 0,
                 background: '#fff',
-                border: '1px solid #9C846C',
+                border: '1px solid #e31837',
                 display: 'flex', alignItems: 'center', justifyContent: 'center',
               }}>
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#9C846C" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#e31837" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
                   <polyline points="9 22 9 12 15 12 15 22" />
                 </svg>
               </div>
               <div>
-                <h3 style={{ fontFamily: F_JOST, fontWeight: '700', fontSize: '20px', color: '#3A2A0E', margin: '0 0 4px', letterSpacing: '0.02em', textTransform: 'uppercase' }}>
+                <h3 style={{ fontFamily: F_JOST, fontWeight: '700', fontSize: '20px', color: '#111827', margin: '0 0 4px', letterSpacing: '0.02em', textTransform: 'uppercase' }}>
                   Hero Realty
                 </h3>
               </div>
@@ -197,10 +197,10 @@ const AboutDeveloper = ({ setIsOpen }) => (
           {/* White Body */}
           <div style={{ padding: '32px', flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
             <div>
-              <p style={{ color: '#3A2A0E', fontFamily: F_SANS, lineHeight: 1.85, fontSize: '15px', margin: '0 0 20px', textAlign: 'justify', opacity: 0.9 }}>
+              <p style={{ color: '#111827', fontFamily: F_SANS, lineHeight: 1.85, fontSize: '15px', margin: '0 0 20px', textAlign: 'justify', opacity: 0.9 }}>
                 A part of the prestigious Hero Enterprise, Hero Realty is a real estate firm that builds quality residences. The company has coupled its innovative technology with sustainable practices to deliver residential projects in India.
               </p>
-              <p style={{ color: '#3A2A0E', fontFamily: F_SANS, lineHeight: 1.85, fontSize: '15px', margin: '0 0 24px', textAlign: 'justify', opacity: 0.9 }}>
+              <p style={{ color: '#111827', fontFamily: F_SANS, lineHeight: 1.85, fontSize: '15px', margin: '0 0 24px', textAlign: 'justify', opacity: 0.9 }}>
                 With Hero Homes Sector MU Greater Noida, we are bringing our legacy of excellence to the vibrant heart of Greater Noida. This flagship residential development is thoughtfully crafted to offer a sanctuary of peace amidst urban convenience. Featuring expansive layouts and premium amenities, Hero Homes redefines contemporary luxury living.
               </p>
             </div>
@@ -217,24 +217,24 @@ const AboutDeveloper = ({ setIsOpen }) => (
         <div style={{
           background: '#fff',
           position: 'relative',
-          border: '1px solid #9C846C',
+          border: '1px solid #e31837',
           display: 'flex', flexDirection: 'column', height: '100%',
         }} data-aos="fade-left" data-aos-delay="200">
           <CurvedCorners bg="#ffffff" />
 
           {/* Form Header */}
           <div style={{
-            background: '#FDF8F6',
+            background: '#f8fafc',
             padding: '24px 32px', position: 'relative',
-            borderBottom: '1px solid #D5C2A8'
+            borderBottom: '1px solid #e5e7eb'
           }}>
             <h3 style={{
               fontFamily: F_JOST, fontWeight: '700', fontSize: '20px',
-              color: '#3A2A0E', margin: '0 0 6px', letterSpacing: '0.02em', textTransform: 'uppercase'
+              color: '#111827', margin: '0 0 6px', letterSpacing: '0.02em', textTransform: 'uppercase'
             }}>
               Book Site Visit Today
             </h3>
-            <p style={{ fontFamily: F_SANS, fontSize: '13px', color: '#684C1B', margin: 0, fontWeight: '500' }}>
+            <p style={{ fontFamily: F_SANS, fontSize: '13px', color: '#4b5563', margin: 0, fontWeight: '500' }}>
               Register now to get the best deal &amp; book your site visit
             </p>
           </div>

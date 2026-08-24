@@ -10,7 +10,7 @@ const ArcIcon = () => (
     width="28" height="14" viewBox="0 0 28 14" fill="none"
     style={{ display: 'inline-block', marginRight: '10px', verticalAlign: 'middle', marginBottom: '3px' }}
   >
-    <path d="M2 12 Q14 2 26 12" stroke="#684C1B" strokeWidth="1.5" fill="none" strokeLinecap="round"/>
+    <path d="M2 12 Q14 2 26 12" stroke="#4b5563" strokeWidth="1.5" fill="none" strokeLinecap="round"/>
   </svg>
 )
 
@@ -45,7 +45,7 @@ const Sustainability = () => {
         <div style={{ marginBottom: '40px', textAlign: 'center' }} data-aos="fade-up">
           <h2 style={{
             fontFamily: F_JOST, fontWeight: '700', fontSize: '17px',
-            color: '#3A2A0E', letterSpacing: '0.1em',
+            color: '#111827', letterSpacing: '0.1em',
             textTransform: 'uppercase', margin: 0,
             display: 'flex', alignItems: 'center', justifyContent: 'center',
           }}>
@@ -70,14 +70,14 @@ const Sustainability = () => {
                 textAlign: 'center',
               }}>
                 {/* Icon */}
-                <div className="w-[80px] h-[80px] rounded-full flex items-center justify-center mb-6 text-white group-hover:scale-105 transition-transform duration-300" style={{ background: '#C9A96E' }}>
+                <div className="w-[80px] h-[80px] rounded-full flex items-center justify-center mb-6 text-white group-hover:scale-105 transition-transform duration-300" style={{ background: '#e31837' }}>
                   <item.icon size={36} strokeWidth={1.5} />
                 </div>
                 
                 {/* Title */}
                 <h3 style={{
                   fontFamily: F_JOST, fontSize: '15px', fontWeight: '600',
-                  color: '#684C1B', letterSpacing: '0.12em', margin: '0 0 12px'
+                  color: '#4b5563', letterSpacing: '0.12em', margin: '0 0 12px'
                 }}>
                   {item.title}
                 </h3>
