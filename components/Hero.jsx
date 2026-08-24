@@ -388,7 +388,7 @@ const Hero = ({ setIsOpen }) => {
 
         {/* Main Heading */}
         <h1 className="hero-title">
-          Hero Homes Sector MU Greater Noida
+          Hero Homes Sector MU
         </h1>
 
         {/* Subtitle */}
