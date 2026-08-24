@@ -9,7 +9,7 @@ const units = [
   {
     type: "3BHK + 2T",
     size: "1,650 Sq.Ft.",
-    price: "₹1.80 Cr*",
+    price: "₹1.85 Cr*",
     oldPrice: null,
     btnText: "Get Details",
     features: [

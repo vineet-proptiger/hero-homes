@@ -18,7 +18,7 @@ const Footer = () => (
       </p>
       <p style={{ fontSize: '15px', color: '#9ca3af', fontFamily: F_SANS, lineHeight: 1.8, marginBottom: '24px', textAlign: 'justify' }}
         data-aos="fade-in" data-aos-delay="100">
-        Hero Homes Sector MU Greater Noida is a premium residential development designed around the concept of Resort Urban Living, offering an elevated lifestyle. Features spacious 3BHK residences starting from ₹1.80 Cr*. Thoughtfully curated amenities, iconic skyline views, advanced security, and smart home features — Hero Homes is designed for those who demand the extraordinary.
+        Hero Homes Sector MU Greater Noida is a premium residential development designed around the concept of Resort Urban Living, offering an elevated lifestyle. Features spacious 3BHK residences starting from ₹1.85 Cr*. Thoughtfully curated amenities, iconic skyline views, advanced security, and smart home features — Hero Homes is designed for those who demand the extraordinary.
       </p>
     </div>
 

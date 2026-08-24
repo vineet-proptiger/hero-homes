@@ -417,7 +417,7 @@ const Hero = ({ setIsOpen }) => {
         {/* Price Line (Moved just above buttons) */}
         <p className="hero-price-line">
           Premium 3BHK Luxury Residences Starting at&nbsp;
-          <span className="hero-price-amt">₹ 1.80 Cr*</span>
+          <span className="hero-price-amt">₹ 1.85 Cr*</span>
         </p>
 
         {/* CTA Row */}
