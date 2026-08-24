@@ -36,7 +36,7 @@ const Amenities = () => {
   return (
     <section id="amenities" style={{
       padding: '72px 0',
-      background: '#fff',
+      background: '#111827',
     }}>
       <div className="container mx-auto px-4 md:px-8 max-w-[1200px]">
 
@@ -48,9 +48,9 @@ const Amenities = () => {
             textTransform: 'uppercase', margin: 0,
             display: 'flex', alignItems: 'center', justifyContent: 'center',
           }}>
-            <span style={{ color: '#111' }}>WORLD-CLASS</span>&nbsp;<span style={{ color: '#e31837' }}>AMENITIES</span>
+            <span style={{ color: '#fff' }}>WORLD-CLASS</span>&nbsp;<span style={{ color: '#e31837' }}>AMENITIES</span>
           </h2>
-          {/* <p style={{ fontFamily: F_SANS, color: '#666', marginTop: '10px' }}>EXPERIENCE MORE EVERY DAY</p> */}
+          {/* <p style={{ fontFamily: F_SANS, color: '#9ca3af', marginTop: '10px' }}>EXPERIENCE MORE EVERY DAY</p> */}
         </div>
 
         {/* Grid Container */}
@@ -59,30 +59,31 @@ const Amenities = () => {
           border: '1px solid #e31837',
           margin: '0 auto',
         }}>
-          <CurvedCorners color="#e31837" bg="#fff" />
+          <CurvedCorners color="#e31837" bg="#111827" />
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[1px]" style={{ background: '#e31837' }}>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[1px]" style={{ background: 'rgba(227, 24, 55, 0.3)' }}>
             {newAmenities.map((item, idx) => (
-              <div key={idx} className="bg-white flex flex-col items-center group" style={{
+              <div key={idx} className="flex flex-col items-center group" style={{
+                background: '#111827',
                 padding: '48px 24px',
                 textAlign: 'center',
               }}>
                 {/* Icon */}
-                <div className="w-[80px] h-[80px] rounded-full flex items-center justify-center mb-6 text-white group-hover:scale-105 transition-transform duration-300" style={{ background: item.color }}>
+                <div className="w-[80px] h-[80px] rounded-full flex items-center justify-center mb-6 text-white group-hover:scale-105 transition-transform duration-300" style={{ background: item.color, boxShadow: `0 0 20px ${item.color}40` }}>
                   <item.icon size={36} strokeWidth={1.5} />
                 </div>
 
                 {/* Title */}
                 <h3 style={{
                   fontFamily: F_JOST, fontSize: '15px', fontWeight: '600',
-                  color: '#4b5563', letterSpacing: '0.12em', margin: '0 0 12px'
+                  color: '#ffffff', letterSpacing: '0.12em', margin: '0 0 12px'
                 }}>
                   {item.title}
                 </h3>
 
                 {/* Description */}
                 <p style={{
-                  fontFamily: F_SANS, fontSize: '13px', color: '#6b7280',
+                  fontFamily: F_SANS, fontSize: '13px', color: '#9ca3af',
                   lineHeight: 1.6, margin: 0,
                   textAlign: 'justify'
                 }}>
