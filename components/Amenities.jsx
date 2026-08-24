@@ -61,7 +61,7 @@ const Amenities = () => {
         }}>
           <CurvedCorners color="#e31837" bg="#111827" />
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[1px]" style={{ background: 'rgba(227, 24, 55, 0.3)' }}>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[1px]" style={{ background: '#e31837' }}>
             {newAmenities.map((item, idx) => (
               <div key={idx} className="flex flex-col items-center group" style={{
                 background: '#111827',
