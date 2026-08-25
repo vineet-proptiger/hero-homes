@@ -50,7 +50,7 @@ const Hero = ({ setIsOpen }) => {
           letter-spacing: 0.03em;
           line-height: 1.08;
           margin: 0 0 6px;
-          text-shadow: 0 2px 4px rgba(0,0,0,0.8), 0 4px 20px rgba(0,0,0,0.9), 0 0 8px rgba(0,0,0,0.6);
+          text-shadow: 0 2px 6px rgba(0,0,0,1), 0 4px 24px rgba(0,0,0,1), 0 0 12px rgba(0,0,0,0.8);
         }
 
         /* Subtitle */
@@ -63,7 +63,7 @@ const Hero = ({ setIsOpen }) => {
           letter-spacing: 0.06em;
           margin: 0 0 12px;
           opacity: 0.95;
-          text-shadow: 0 2px 4px rgba(0,0,0,0.8), 0 4px 12px rgba(0,0,0,0.9), 0 0 6px rgba(0,0,0,0.6);
+          text-shadow: 0 2px 6px rgba(0,0,0,1), 0 4px 16px rgba(0,0,0,1), 0 0 8px rgba(0,0,0,0.8);
         }
 
         /* Price line */
@@ -73,17 +73,17 @@ const Hero = ({ setIsOpen }) => {
           color: rgba(255,255,255,0.95);
           margin: 0 0 22px;
           line-height: 1.4;
-          text-shadow: 0 2px 4px rgba(0,0,0,0.8), 0 4px 12px rgba(0,0,0,0.9), 0 0 6px rgba(0,0,0,0.6);
+          text-shadow: 0 2px 6px rgba(0,0,0,1), 0 4px 16px rgba(0,0,0,1), 0 0 8px rgba(0,0,0,0.8);
         }
 
         @keyframes heroPriceBlink {
           0%, 75% { 
             opacity: 1; 
-            text-shadow: 0 2px 4px rgba(0,0,0,0.8), 0 0 12px rgba(255,255,255,0.8); 
+            text-shadow: 0 2px 6px rgba(0,0,0,1), 0 0 16px rgba(255,255,255,0.9); 
           }
           76%, 100% { 
             opacity: 0; 
-            text-shadow: 0 2px 4px rgba(0,0,0,0.8); 
+            text-shadow: 0 2px 6px rgba(0,0,0,1); 
           }
         }
 
@@ -396,7 +396,7 @@ const Hero = ({ setIsOpen }) => {
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-brand, #e31837)" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0, backgroundColor: '#fff', borderRadius: '50%', padding: '2px' }}>
                 <polyline points="20 6 9 17 4 12" />
               </svg>
-              <span className="hero-bullet-text" style={{ color: '#fff', fontFamily: 'var(--font-sans), Open Sans, sans-serif', fontSize: 'clamp(13px, 1.5vw, 18px)', fontWeight: '500', letterSpacing: '0.02em', textShadow: '0 2px 4px rgba(0,0,0,0.8), 0 4px 12px rgba(0,0,0,0.9)' }}>
+              <span className="hero-bullet-text" style={{ color: '#fff', fontFamily: 'var(--font-sans), Open Sans, sans-serif', fontSize: 'clamp(13px, 1.5vw, 18px)', fontWeight: '500', letterSpacing: '0.02em', textShadow: '0 2px 6px rgba(0,0,0,1), 0 4px 16px rgba(0,0,0,1), 0 0 8px rgba(0,0,0,0.8)' }}>
                 {text}
               </span>
             </div>
