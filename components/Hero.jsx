@@ -30,32 +30,19 @@ const Hero = ({ setIsOpen }) => {
           display: block;
         }
 
-        /* Dark gradient overlay — strictly confined to the text area */
-        .hero-overlay {
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          width: 850px;
-          height: 450px;
-          max-width: 100%;
-          background: radial-gradient(
-            circle at bottom left,
-            rgba(0,0,0,0.95) 0%,
-            rgba(0,0,0,0.6) 40%,
-            rgba(0,0,0,0) 75%
-          );
-          z-index: 2;
-          pointer-events: none;
-        }
-
-        /* Content block — sits over the image */
+        /* Content block — sits over the image and has its own tight shadow */
         .hero-content {
           position: absolute;
           bottom: 0;
           left: 0;
-          right: 0;
           z-index: 10;
-          padding: 0 44px 72px;
+          padding: 40px 100px 72px 44px; /* extra right padding for smooth fade */
+          background: radial-gradient(
+            circle at bottom left,
+            rgba(0,0,0,0.85) 0%,
+            rgba(0,0,0,0.5) 40%,
+            rgba(0,0,0,0) 80%
+          );
         }
 
         /* Main title */
@@ -387,9 +374,6 @@ const Hero = ({ setIsOpen }) => {
           </div>
         ))}
       </div>
-
-      {/* ── Dark overlay for text legibility ── */}
-      <div className="hero-overlay" />
 
       {/* ── Content overlay ── */}
       <div className="hero-content">
