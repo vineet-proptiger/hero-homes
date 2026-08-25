@@ -122,7 +122,7 @@ const highlights = [
   { title: '3 Iconic Towers', desc: 'Beautifully designed high-rise towers offering an exclusive lifestyle.', Icon: IconBuilding },
   { title: 'Smart-Home Features', desc: 'Equipped with the latest smart-home technology for modern living.', Icon: IconSmart },
   { title: 'Modern Amenities', desc: 'World-class amenities combining relaxation with ultimate sophistication.', Icon: IconWaves },
-  { title: '525 Premium Apartments', desc: 'Spacious and thoughtfully designed 2 & 3 BHK apartments for urban families.', Icon: IconHome },
+  { title: '525 Premium Apartments', desc: 'Spacious and thoughtfully designed 3 BHK apartments for urban families.', Icon: IconHome },
 ]
 
 const Highlights = ({ setIsOpen }) => (

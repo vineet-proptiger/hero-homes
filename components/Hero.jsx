@@ -30,19 +30,14 @@ const Hero = ({ setIsOpen }) => {
           display: block;
         }
 
-        /* Content block — sits over the image and has its own tight shadow */
+        /* Content block — sits over the image */
         .hero-content {
           position: absolute;
           bottom: 0;
           left: 0;
+          right: 0;
           z-index: 10;
-          padding: 40px 100px 72px 44px; /* extra right padding for smooth fade */
-          background: radial-gradient(
-            circle at bottom left,
-            rgba(0,0,0,0.85) 0%,
-            rgba(0,0,0,0.5) 40%,
-            rgba(0,0,0,0) 80%
-          );
+          padding: 0 44px 72px;
         }
 
         /* Main title */
@@ -55,7 +50,7 @@ const Hero = ({ setIsOpen }) => {
           letter-spacing: 0.03em;
           line-height: 1.08;
           margin: 0 0 6px;
-          text-shadow: 0 2px 16px rgba(0,0,0,0.5);
+          text-shadow: 0 2px 4px rgba(0,0,0,0.8), 0 4px 20px rgba(0,0,0,0.9), 0 0 8px rgba(0,0,0,0.6);
         }
 
         /* Subtitle */
@@ -67,27 +62,28 @@ const Hero = ({ setIsOpen }) => {
           text-transform: uppercase;
           letter-spacing: 0.06em;
           margin: 0 0 12px;
-          opacity: 0.92;
-          text-shadow: 0 1px 8px rgba(0,0,0,0.4);
+          opacity: 0.95;
+          text-shadow: 0 2px 4px rgba(0,0,0,0.8), 0 4px 12px rgba(0,0,0,0.9), 0 0 6px rgba(0,0,0,0.6);
         }
 
         /* Price line */
         .hero-price-line {
           font-family: var(--font-sans), Open Sans, sans-serif;
           font-size: clamp(13px, 1.5vw, 18px);
-          color: rgba(255,255,255,0.88);
+          color: rgba(255,255,255,0.95);
           margin: 0 0 22px;
           line-height: 1.4;
+          text-shadow: 0 2px 4px rgba(0,0,0,0.8), 0 4px 12px rgba(0,0,0,0.9), 0 0 6px rgba(0,0,0,0.6);
         }
 
         @keyframes heroPriceBlink {
           0%, 75% { 
             opacity: 1; 
-            text-shadow: 0 0 8px rgba(255,255,255,0.6); 
+            text-shadow: 0 2px 4px rgba(0,0,0,0.8), 0 0 12px rgba(255,255,255,0.8); 
           }
           76%, 100% { 
             opacity: 0; 
-            text-shadow: none; 
+            text-shadow: 0 2px 4px rgba(0,0,0,0.8); 
           }
         }
 
@@ -400,7 +396,7 @@ const Hero = ({ setIsOpen }) => {
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-brand, #e31837)" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0, backgroundColor: '#fff', borderRadius: '50%', padding: '2px' }}>
                 <polyline points="20 6 9 17 4 12" />
               </svg>
-              <span className="hero-bullet-text" style={{ color: '#fff', fontFamily: 'var(--font-sans), Open Sans, sans-serif', fontSize: 'clamp(13px, 1.5vw, 18px)', fontWeight: '500', letterSpacing: '0.02em', textShadow: '0 1px 4px rgba(0,0,0,0.5)' }}>
+              <span className="hero-bullet-text" style={{ color: '#fff', fontFamily: 'var(--font-sans), Open Sans, sans-serif', fontSize: 'clamp(13px, 1.5vw, 18px)', fontWeight: '500', letterSpacing: '0.02em', textShadow: '0 2px 4px rgba(0,0,0,0.8), 0 4px 12px rgba(0,0,0,0.9)' }}>
                 {text}
               </span>
             </div>
