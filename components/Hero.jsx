@@ -424,7 +424,7 @@ const Hero = ({ setIsOpen }) => {
           >
             <span style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
               <span className="flex-wrap justify-center text-center" style={{ textTransform: 'uppercase', fontWeight: '700', display: 'flex', alignItems: 'center', gap: '4px' }}>
-                <span style={{ animation: 'buttonBlink 1.4s infinite', fontSize: 'clamp(12px, 3.5vw, 14.5px)', whiteSpace: 'nowrap' }}>EOI ₹10L</span>
+                <span style={{ animation: 'buttonBlink 1.4s infinite', fontSize: 'clamp(12px, 3.5vw, 14.5px)', whiteSpace: 'nowrap' }}>EOI ₹10L*</span>
                 <span style={{ fontSize: 'clamp(10px, 3vw, 12.5px)', opacity: 0.9 }}>· CONSTRUCTION LINKED PLAN</span>
               </span>
               <svg className="hidden sm:block" width="13" height="13" viewBox="0 0 24 24" fill="none"
