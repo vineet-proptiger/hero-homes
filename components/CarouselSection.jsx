@@ -129,12 +129,13 @@ const CarouselSection = ({ setIsOpen }) => {
         {/* ── Header Row ── */}
         <div className="flex justify-center mb-8 w-full min-h-[50px]">
           {/* Centered Heading */}
-          <div className="flex-1 flex justify-center">
+          <div className="flex-1 flex justify-center text-center">
             <h2 style={{
-              fontFamily: F_JOST, fontWeight: '700', fontSize: '24px',
-              letterSpacing: '0.1em', margin: 0,
-            }} className="heading-center-line text-center">
-              <span style={{ color: '#111827' }}>Glimpses of</span>&nbsp;<span style={{ color: '#e31837' }}>Masterpiece</span>
+              fontFamily: F_JOST, fontWeight: '700', fontSize: '17px',
+              letterSpacing: '0.1em', textTransform: 'uppercase', margin: 0,
+              display: 'inline-block', alignItems: 'center', justifyContent: 'center'
+            }} className="heading-center-line">
+              <span style={{ color: '#111827' }}>GLIMPSES OF</span>&nbsp;<span style={{ color: '#e31837' }}>MASTERPIECE</span>
             </h2>
           </div>
         </div>
