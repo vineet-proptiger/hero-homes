@@ -152,12 +152,16 @@ const Hero = ({ setIsOpen }) => {
           width: 100%;
           height: 100%;
           opacity: 0;
-          transition: opacity 1.2s ease-in-out;
-          pointer-events: none;
+          transition: opacity 1.5s ease-in-out;
         }
         .slide-layer.active {
           opacity: 1;
-          pointer-events: auto;
+          z-index: 5;
+        }
+
+        .desktop-hero-img, .mobile-hero-img {
+          width: 100%;
+          height: 100%;
         }
 
         .hero-image {
