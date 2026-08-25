@@ -54,6 +54,7 @@ const Navbar = ({ setIsOpen }) => {
         >
           <a href="#overview"   style={aStyle} onMouseEnter={hover} onMouseLeave={unhover}>OVERVIEW</a>
           <a href="#masterplan" style={aStyle} onMouseEnter={hover} onMouseLeave={unhover}>FLOOR PLANS</a>
+          <a href="#pricing"    style={aStyle} onMouseEnter={hover} onMouseLeave={unhover}>PRICING</a>
         </div>
 
         {/* CENTER LOGO */}
@@ -119,6 +120,7 @@ const Navbar = ({ setIsOpen }) => {
           {[
             { label: 'OVERVIEW',    href: '#overview' },
             { label: 'FLOOR PLANS', href: '#masterplan' },
+            { label: 'PRICING',     href: '#pricing' },
             { label: 'AMENITIES',   href: '#amenities' },
             { label: 'GALLERY',     href: '#homes-designed' },
           ].map(({ label, href }, i) => (
