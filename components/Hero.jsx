@@ -87,6 +87,11 @@ const Hero = ({ setIsOpen }) => {
           }
         }
 
+        @keyframes buttonBlink {
+          0%, 75% { opacity: 1; }
+          76%, 100% { opacity: 0; }
+        }
+
         .hero-price-amt {
           font-family: var(--font-jost), Montserrat, sans-serif;
           font-size: clamp(20px, 3vw, 36px);
@@ -106,15 +111,15 @@ const Hero = ({ setIsOpen }) => {
 
         /* Hero buttons use global btn-brand / btn-gold-outline classes */
 
-        /* First button — white text + white border on dark hero bg */
+        /* First button — white bg + red text */
         .hero-btn-one {
-          color: #fff !important;
-          border: 1.5px solid rgba(255,255,255,0.9) !important;
-          background: transparent !important;
+          color: #e31837 !important;
+          border: 1.5px solid #ffffff !important;
+          background: #ffffff !important;
         }
         .hero-btn-one:hover {
-          background: #ffffff !important;
-          color: #e31837 !important;
+          background: transparent !important;
+          color: #ffffff !important;
           border-color: #ffffff !important;
         }
 
@@ -388,7 +393,6 @@ const Hero = ({ setIsOpen }) => {
           {[
             '4.7 Acres of Resort-Style Living',
             '3 Towers · 550 Exclusive Residences',
-            'EOI ₹10L · Construction Linked Plan',
             'Wellness-Centric, Sun-Aligned Homes',
             '25 Minutes from Jewar International Airport'
           ].map((text, i) => (
@@ -416,15 +420,20 @@ const Hero = ({ setIsOpen }) => {
           <button
             onClick={() => setIsOpen(true)}
             className="btn-gold-outline hero-btn-one"
-            style={{ fontSize: '12px', padding: '11px 22px' }}
+            style={{ fontSize: '14.5px', padding: '12px clamp(12px, 4vw, 24px)' }}
           >
-            Unlock Pricing &amp; Floor Plans
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" strokeWidth="2.5"
-              strokeLinecap="round" strokeLinejoin="round">
-              <line x1="7" y1="17" x2="17" y2="7" />
-              <polyline points="7 7 17 7 17 17" />
-            </svg>
+            <span style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+              <span className="flex-wrap justify-center text-center" style={{ textTransform: 'uppercase', fontWeight: '700', display: 'flex', alignItems: 'center', gap: '4px' }}>
+                <span style={{ animation: 'buttonBlink 1.4s infinite', fontSize: 'clamp(12px, 3.5vw, 14.5px)', whiteSpace: 'nowrap' }}>EOI ₹10L</span>
+                <span style={{ fontSize: 'clamp(10px, 3vw, 12.5px)', opacity: 0.9 }}>· CONSTRUCTION LINKED PLAN</span>
+              </span>
+              <svg className="hidden sm:block" width="13" height="13" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" strokeWidth="2.5"
+                strokeLinecap="round" strokeLinejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7" />
+                <polyline points="7 7 17 7 17 17" />
+              </svg>
+            </span>
           </button>
 
           {/* Button 2 — WhatsApp (global btn-brand) */}
