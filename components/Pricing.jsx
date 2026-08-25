@@ -127,19 +127,19 @@ const Pricing = ({ setIsOpen }) => {
                   style={{ background: `linear-gradient(135deg, #f8fafc 0%, transparent 100%)` }}
                 />
                 <h3
-                  className="text-2xl font-bold mb-2 relative z-10 uppercase"
-                  style={{ fontFamily: F_JOST, color: '#111827', letterSpacing: "0.05em" }}
+                  className="font-bold mb-2 relative z-10 uppercase"
+                  style={{ fontFamily: F_JOST, color: '#111827', letterSpacing: "0.05em", fontSize: "clamp(20px, 5vw, 24px)" }}
                 >
                   {unit.type}
                 </h3>
                 {unit.subtitle ? (
-                  <p className="text-[15px] relative z-10 mb-2 leading-tight" style={{ fontFamily: F_SANS, color: '#4b5563' }}>
+                  <p className="relative z-10 mb-2 leading-tight" style={{ fontFamily: F_SANS, color: '#4b5563', fontSize: "clamp(13px, 4vw, 15px)" }}>
                     {unit.subtitle}
                   </p>
                 ) : (
                   <div className="flex items-center gap-2 relative z-10">
                     <span className="text-[12px] uppercase tracking-wider font-semibold" style={{ fontFamily: F_SANS, color: '#e31837' }}>Size:</span>
-                    <p className="text-[15px] font-semibold" style={{ fontFamily: F_SANS, color: '#111827' }}>
+                    <p className="font-semibold" style={{ fontFamily: F_SANS, color: '#111827', fontSize: "clamp(13px, 4vw, 15px)" }}>
                       {unit.size}
                     </p>
                   </div>
@@ -148,14 +148,14 @@ const Pricing = ({ setIsOpen }) => {
 
               <div className="p-8 pt-8">
                 <div className="mb-8">
-                  <span className="text-[11px] uppercase tracking-[0.2em] font-semibold block mb-2" style={{ fontFamily: F_JOST, color: '#e31837' }}>Starting At</span>
+                  <span className="uppercase tracking-[0.2em] font-semibold block mb-2" style={{ fontFamily: F_JOST, color: '#e31837', fontSize: "clamp(10px, 2.5vw, 11px)" }}>Starting At</span>
                   <div className="flex items-center gap-3 flex-nowrap whitespace-nowrap">
                     {unit.oldPrice && (
-                      <span className="text-lg line-through font-medium opacity-60" style={{ fontFamily: F_SANS, color: '#e31837' }}>
+                      <span className="line-through font-medium opacity-60" style={{ fontFamily: F_SANS, color: '#e31837', fontSize: "clamp(16px, 4vw, 18px)" }}>
                         {unit.oldPrice}
                       </span>
                     )}
-                    <p className="text-3xl font-bold" style={{ fontFamily: F_JOST, color: '#111827' }}>
+                    <p className="font-bold" style={{ fontFamily: F_JOST, color: '#111827', fontSize: "clamp(22px, 6vw, 30px)" }}>
                       {unit.price}
                     </p>
                   </div>
@@ -167,7 +167,7 @@ const Pricing = ({ setIsOpen }) => {
                       <div className="mt-1 flex-shrink-0 flex items-center justify-center">
                         <Check size={18} strokeWidth={2.5} style={{ color: '#e31837' }} />
                       </div>
-                      <span className="font-medium text-[15px]" style={{ fontFamily: F_SANS, color: '#111827' }}>{feature}</span>
+                      <span className="font-medium" style={{ fontFamily: F_SANS, color: '#111827', fontSize: "clamp(13px, 3.5vw, 15px)" }}>{feature}</span>
                     </div>
                   ))}
                 </div>

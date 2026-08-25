@@ -409,7 +409,7 @@ const Hero = ({ setIsOpen }) => {
 
         {/* Price Line (Moved just above buttons) */}
         <p className="hero-price-line">
-          Premium 3BHK Luxury Residences Starting at&nbsp;
+          Premium 3 BHK Luxury Residences Starting at&nbsp;
           <span className="hero-price-amt">₹ 1.85 Cr*</span>
         </p>
 
@@ -436,11 +436,9 @@ const Hero = ({ setIsOpen }) => {
             </span>
           </button>
 
-          {/* Button 2 — WhatsApp (global btn-brand) */}
-          <a
-            href="https://wa.me/919718344024?text=Hi%20I%20am%20interested%20in%20Hero%20Homes%20Sector%20MU%20Greater%20Noida"
-            target="_blank"
-            rel="noopener noreferrer"
+          {/* Button 2 — Schedule Site Visit (Opens Popup) */}
+          <button
+            onClick={() => setIsOpen(true)}
             className="btn-brand"
             style={{ fontSize: '12px', padding: '11px 22px' }}
           >
@@ -452,7 +450,7 @@ const Hero = ({ setIsOpen }) => {
               <line x1="3" y1="10" x2="21" y2="10"></line>
             </svg>
             Schedule Site Visit
-          </a>
+          </button>
 
         </div>
 
