@@ -34,8 +34,8 @@ const nephilm = localFont({
 
 export const metadata = {
   metadataBase: new URL('http://herohomesectormu.co.in'),
-  title: 'Hero Homes Sector MU Greater Noida',
-  description: "Hero Homes Sector MU Greater Noida — Premium 3 BHK Homes. Excellent Connectivity. Book Now.",
+  title: 'Hero Homes Sector MU Greater Noida | 3 BHK Homes',
+  description: 'Hero Homes Sector MU Greater Noida, offering premium 3 BHK homes with modern amenities, smart features, prime connectivity and luxury living.',
   icons: {
     icon: '/images/favicon/fav.webp',
   },
@@ -59,8 +59,8 @@ export default function RootLayout({ children }) {
               },
               "url": "http://herohomesectormu.co.in",
               "name": "Hero Homes Sector MU Greater Noida",
-              "headline": "Hero Homes Sector MU Greater Noida | Premium 3 BHK Homes",
-              "description": "Hero Homes Sector MU Greater Noida — Premium 3 BHK Homes. Excellent Connectivity. Book Now.",
+              "headline": "Hero Homes Sector MU Greater Noida | 3 BHK Homes",
+              "description": "Hero Homes Sector MU Greater Noida, offering premium 3 BHK homes with modern amenities, smart features, prime connectivity and luxury living.",
               "image": "http://herohomesectormu.co.in/_next/image?url=%2Fimages%2Fhero%2Fbanner1.webp&w=1200&q=75",
               "author": {
                 "@type": "Organization",
