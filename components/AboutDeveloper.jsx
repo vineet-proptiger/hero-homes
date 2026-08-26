@@ -196,12 +196,8 @@ const AboutDeveloper = ({ setIsOpen }) => (
 
           {/* White Body */}
           <div style={{ padding: '32px', flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
-            <div>
-              <p style={{ color: '#111827', fontFamily: F_SANS, lineHeight: 1.85, fontSize: '15px', margin: '0 0 16px', textAlign: 'justify', opacity: 0.9 }}>
-                Hero Realty is the real estate arm of the renowned Hero Group, one of India's most respected business conglomerates. Established in 2006, the company has carved a niche for itself by developing thoughtfully planned residential projects that combine contemporary architecture, functional design, and sustainability.
-              </p>
               <p style={{ color: '#111827', fontFamily: F_SANS, lineHeight: 1.85, fontSize: '15px', margin: '0 0 24px', textAlign: 'justify', opacity: 0.9 }}>
-                With a strong commitment to quality and customer satisfaction, Hero Realty ensures that every project meets the highest standards of construction and safety. Driven by the core values of trust, transparency, and innovation, the brand continues to create spaces that inspire modern living and deliver long-term value for homebuyers across the country.
+                Hero Realty is the real estate arm of the renowned Hero Group, one of India's most respected business conglomerates. Established in 2006, the company has carved a niche for itself by developing thoughtfully planned residential projects that combine contemporary architecture, functional design, and sustainability.
               </p>
             </div>
 
